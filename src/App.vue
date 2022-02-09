@@ -6,6 +6,9 @@
 </template>
 
 <style>
+*{
+  background-color: #F8F7F1;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
