@@ -1,16 +1,13 @@
 <template>
-  <!--<div id="nav">
-    <router-link to="/">Home</router-link> |
-  </div>-->
     <router-view/>
 </template>
 
 <style>
 *{
-  background-color: #F8F7F1;
+  background-color: #333333;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
