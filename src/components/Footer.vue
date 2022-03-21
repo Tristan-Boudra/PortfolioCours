@@ -3,15 +3,15 @@
   <div class="flex">
     <div class="flex space-x-8 mx-auto">
       <img class="flex-row h-1 mt-5" src="@/assets/Line.png" alt="Ligne">
-      <img class="flew-row" src="@/assets/Tristan.svg" alt="Logo">
+      <img class="flew-row ml-auto" src="@/assets/Tristan.svg" alt="Logo">
       <img class="flex-row h-1 mt-5" src="@/assets/Line.png" alt="Ligne">
     </div>
   </div>
   <div class="flex mx-auto">
-    <div class="flex mx-auto mt-10">
-      <img class="flex-row" src="@/assets/Twitter.png" alt="Twitter">
-      <img class="flex-row" src="@/assets/Discord.png" alt="Discord">
-      <img class="flex-row h-20 w-24" src="@/assets/Instagram.png" alt="Instagram">
+    <div class="flex mx-auto mt-10 space-x-4">
+      <a href="https://twitter.com/TristanBoudra"><img class="flex-row h-14 w-14" src="@/assets/twitter.png" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/tristan-boudra-a43b6918a/"><img class="flex-row h-14 w-14" src="@/assets/linkedin.png" alt="Linkedin"></a>
+      <a href="https://github.com/Tristan-Boudra"><img class="flex-row h-14 w-14" src="@/assets/github.png" alt="Github"></a>
     </div>
   </div>
   <div class="flex mx">

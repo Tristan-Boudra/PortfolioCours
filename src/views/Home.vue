@@ -35,6 +35,34 @@
       </div>
     </div>
   </div>
+    <section class="py-16">
+      <div class="max-w-screen-lg mx-auto px-3 grid gap-12">
+        <h2 class="text-3xl font-bold text-center mx-auto">Me contacter</h2>
+        <div class="rounded-xl p-12 grid md:flex gap-8">
+          <div class="w-max">
+          </div>
+          <form action="" class="grid md:grid-cols-2 gap-4 grow text-left font-semibold">
+            <div class="grid gap-2">
+              <label for="name">Nom :</label>
+              <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="name" name="name" autocomplete="name">
+            </div>
+            <div class="grid gap-2">
+              <label for="name">Prénom :</label>
+              <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="name" name="name" autocomplete="name">
+            </div>
+            <div class="grid gap-2">
+              <label for="email">Email :</label>
+              <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="email" name="email" autocomplete="email">
+            </div>
+            <div class="grid md:col-span-2 ">
+              <label for="message">Message :</label>
+              <textarea class="px-2 py-1 border-2 rounded-lg border-[#DA5759] h-32" name="message" id="message"></textarea>
+            </div>
+            <button class="md:col-span-2 ml-auto px-5 py-2 bg-[#DA5759] shadow-md text-white rounded-xl flex items-center w-fit"><span class="text-[#000000] bg-[#DA5759] font-bold tracking-widest">Envoyer</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
   <Footer/>
 </template>
 
