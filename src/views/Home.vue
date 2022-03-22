@@ -13,8 +13,8 @@
         </div>
       </div>
     </div>
-    <div class="w-3/5 flex-row">
-      <img class="mx-auto rounded-3xl mt-20" src="@/assets/Tristan.png" alt="">
+    <div class="w-3/5 flex-row md:flex">
+      <img class="mx-auto rounded-3xl mt-20 lg:w-48 md:h-full md:w-full md:w-48" src="@/assets/Tristan.png" alt="">
     </div>
   </div>
   <div class="flex text-[#FFFFFF] gap-4 mt-20">
@@ -35,34 +35,44 @@
       </div>
     </div>
   </div>
-    <section class="py-16">
-      <div class="max-w-screen-lg mx-auto px-3 grid gap-12">
-        <h2 class="text-3xl font-bold text-center mx-auto">Me contacter</h2>
-        <div class="rounded-xl p-12 grid md:flex gap-8">
-          <div class="w-max">
-          </div>
-          <form action="" class="grid md:grid-cols-2 gap-4 grow text-left font-semibold">
-            <div class="grid gap-2">
-              <label for="name">Nom :</label>
-              <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="name" name="name" autocomplete="name">
-            </div>
-            <div class="grid gap-2">
-              <label for="name">Prénom :</label>
-              <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="name" name="name" autocomplete="name">
-            </div>
-            <div class="grid gap-2">
-              <label for="email">Email :</label>
-              <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="email" name="email" autocomplete="email">
-            </div>
-            <div class="grid md:col-span-2 ">
-              <label for="message">Message :</label>
-              <textarea class="px-2 py-1 border-2 rounded-lg border-[#DA5759] h-32" name="message" id="message"></textarea>
-            </div>
-            <button class="md:col-span-2 ml-auto px-5 py-2 bg-[#DA5759] shadow-md text-white rounded-xl flex items-center w-fit"><span class="text-[#000000] bg-[#DA5759] font-bold tracking-widest">Envoyer</span></button>
-          </form>
+  <section class="flex py-16 p-16">
+    <div class="flex-row max-w-screen-lg mx-auto px-3 grid gap-12">
+      <h2 class="text-3xl font-bold text-center mx-auto">Me contacter</h2>
+      <div class="rounded-xl p-12 grid md:flex gap-8">
+        <div class="w-max">
         </div>
+        <form action="" class="grid md:grid-cols gap-4 grow text-left font-semibold">
+          <div class="grid gap-2">
+            <label for="name">Nom :</label>
+            <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="name" name="name" autocomplete="name">
+          </div>
+          <div class="grid gap-2">
+            <label for="name">Prénom :</label>
+            <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="name" name="name" autocomplete="name">
+          </div>
+          <div class="grid gap-2">
+            <label for="email">Email :</label>
+            <input class="px-2 py-1 border-2 rounded-lg border-[#DA5759]" type="text" id="email" name="email" autocomplete="email">
+          </div>
+          <div class="grid md:col-span-2 ">
+            <label for="message">Message :</label>
+            <textarea class="px-2 py-1 border-2 rounded-lg border-[#DA5759] h-32" name="message" id="message"></textarea>
+          </div>
+          <button class="md:col-span-2 ml-auto px-5 py-2 bg-[#DA5759] shadow-md text-white rounded-xl flex items-center w-fit"><span class="text-[#000000] bg-[#DA5759] font-bold tracking-widest">Envoyer</span></button>
+        </form>
       </div>
-    </section>
+    </div>
+    <div class="flex">
+      <div class="flex-row mt-60 gap-4">
+        <div class="bg-white text-[#333333] h-16 rounded-xl px-5 py-2 align-middle font-semibold gap-4">Vous souhaitez me contacter ?<br>Utilisez le formulaire ci-contre </div>
+        <div class="bg-white text-[#333333] h-16 rounded-xl px-5 py-2 align-middle gap-8 font-semibold gap-4">Vous pouvez également me contacter via l’adresse mail suivante :<br>boudratristan@gmail.com</div>
+      </div>
+      <div class="top-6 mt-96 relative flex-row">
+        <img class="h-20 w-20" src="@/assets/background.svg" alt="Background de la photo">
+        <img class="h-20 w-20 rounded-3xl" src="@/assets/Tristan.png" alt="Photo">
+      </div>
+    </div>
+  </section>
   <Footer/>
 </template>
 

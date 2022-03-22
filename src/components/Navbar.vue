@@ -1,12 +1,17 @@
 <template>
-  <div class="flex flex-row bg-[#333333] px-5 pt-1.5 w-full">
-    <img class="flex p-1 bg-[#333333]" src="@/assets/Tristan.svg" href="#" alt="Logo portfolio Tristan">
-    <div class="flex flex-row justify-between mx-auto text-[#0D2F3F] font-medium text-[#FFFFFF]">
-      <div class="px-5 pt-2 font-sans bg-[#333333]">Accueil</div>
-      <div class="px-5 pt-2 font-sans bg-[#333333]">A propos de moi</div>
-      <div class="px-5 pt-2 font-sans bg-[#333333]">Mes projets</div>
-      <!-- <div class="px-5 pt-2 font-sans bg-[#333333]">Mes services</div> -->
-      <div class="px-5 pt-2 font-sans bg-[#333333]">Me contacter</div>
+  <header class="p-4 fixed inset-x-0 z-20 top-0">
+    <div class="max-w-screen-lg mx-auto">
+      <nav class="flex justify-between">
+        <img src="@/assets/Tristan.svg" class="px-4 py-1 left-0">
+        <ul>
+          <li class="flex gap-4">
+            <router-link to="/" class="px-4 py-2">Accueil</router-link>
+            <router-link to="/" class="px-4 py-2">A propos de moi</router-link>
+            <router-link to="/" class="px-4 py-2">Mes projets</router-link>
+            <router-link to="/" class="px-4 py-2">Me contacter</router-link>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
 </template>
