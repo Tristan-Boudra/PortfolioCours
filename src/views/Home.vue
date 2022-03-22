@@ -1,20 +1,20 @@
 <template>
   <Navbar/>
-  <div class="flex flex-row gap-4 mt-20">
-    <div class="w-2/5">
+  <div class="flex mt-20 w-full mx-auto">
+    <div class="flex-col">
       <div class="gap-4 text-[#FFFFFF] mt-20 mx-auto">
-        <div class="w-15 text-8xl pb-10">Boudra<br>Tristan</div>
-        <div class="pb-10 mt-10 text-left w-72 m-auto">Hello !<br>Je suis actuellement étudiant en développement web.</div>
-        <div class="space-x-14 mt-10 flex items-center">
-          <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest flex-row ml-52" href="#">Commencer</button>
-          <button class="border-2 border-white p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-14 tracking-widest flex-row" href="#">Voir mes projets
-            <img class="m-auto mt-1 flex" src="@/assets/Arrow.png" alt="flèche pour voir mes projets">
+        <div class="w-full text-6xl pb-10">Boudra<br>Tristan</div>
+        <div class="pb-10 mt-10 text-left mx-auto">Hello !<br>Je suis actuellement étudiant en développement web.</div>
+        <div class="space-x-14 mt-10 flex mx-auto">
+          <button class="bg-[#DA5759] px-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest flex-row" href="#">Commencer</button>
+          <button class="border-2 border-white p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-14 tracking-widest flex-row relative" href="#">Voir mes projets
+            <img class="m-auto mt-1 flex absolute" src="@/assets/Arrow.png" alt="flèche pour voir mes projets">
           </button>
         </div>
       </div>
     </div>
-    <div class="w-3/5 flex-row md:flex">
-      <img class="mx-auto rounded-3xl mt-20 lg:w-48 md:h-full md:w-full md:w-48" src="@/assets/Tristan.png" alt="">
+    <div class="flex-col">
+      <img class="mx-auto rounded-3xl mt-34 w-24 md:w-34 lg:w-full" src="@/assets/Tristan.png" alt="Image de profile">
     </div>
   </div>
   <div class="flex text-[#FFFFFF] gap-4 mt-20">
@@ -63,11 +63,11 @@
       </div>
     </div>
     <div class="flex">
-      <div class="flex-row mt-60 gap-4">
+      <div class="flex-row mt-60">
         <div class="bg-white text-[#333333] h-16 rounded-xl px-5 py-2 align-middle font-semibold gap-4">Vous souhaitez me contacter ?<br>Utilisez le formulaire ci-contre </div>
         <div class="bg-white text-[#333333] h-16 rounded-xl px-5 py-2 align-middle gap-8 font-semibold gap-4">Vous pouvez également me contacter via l’adresse mail suivante :<br>boudratristan@gmail.com</div>
       </div>
-      <div class="top-6 mt-96 relative flex-row">
+      <div class="top-6 mt-96 flex-row">
         <img class="h-20 w-20" src="@/assets/background.svg" alt="Background de la photo">
         <img class="h-20 w-20 rounded-3xl" src="@/assets/Tristan.png" alt="Photo">
       </div>
