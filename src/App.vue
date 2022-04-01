@@ -3,6 +3,9 @@
 </template>
 
 <style>
+html {
+  overflow-x: hidden;
+}
 *{
   background-color: #333333;
 }

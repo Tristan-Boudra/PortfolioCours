@@ -1,4 +1,4 @@
-<template>
+<!--<template>
 <footer class="mt-20 text-[#FFFFFF]">
   <div class="flex">
     <div class="flex space-x-8 mx-auto">
@@ -20,4 +20,18 @@
     </div>
   </div>
 </footer>
+</template>-->
+
+<template>
+  <div class="w-full">
+    <footer class="max-w-screen-lg mx-auto">
+      <div class="flex">
+        <div class="flex space-x-8 mx-auto">
+          <img class="flex-row w-20 md:w-52 lg:w-full h-1 mt-5 rounded-full" src="@/assets/Line.png" alt="Ligne">
+          <img class="flew-row ml-auto" src="@/assets/Tristan.svg" alt="Logo">
+          <img class="flex-row w-20 h-1 md:w-52 lg:w-full mt-5 rounded-full" src="@/assets/Line.png" alt="Ligne">
+        </div>
+      </div>
+    </footer>
+  </div>
 </template>
