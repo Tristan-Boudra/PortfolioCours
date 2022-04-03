@@ -7,7 +7,8 @@
           <li class="flex gap-4">
             <router-link to="/" class="px-4 py-2">Accueil</router-link>
             <router-link to="/" class="px-4 py-2">A propos de moi</router-link>
-            <router-link to="/" class="px-4 py-2">Mes projets</router-link>
+            <router-link to="/" class="px-4 py-2">Projets</router-link>
+            <router-link to="/" class="px-4 py-2">Veilles</router-link>
             <router-link to="/" class="px-4 py-2">Me contacter</router-link>
           </li>
         </ul>

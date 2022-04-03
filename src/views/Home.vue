@@ -60,6 +60,21 @@
     </section>
     <section>
       <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
+        <h2 class="text-3xl font-bold text-center mx-auto">Veilles</h2>
+        <p class="text-left p-4">Une veille est une activité consistant à s'informer sur les dernières avancées et informations d'un secteur donné.<br>
+          Durant ce BTS SIO, nous avons dû mettre en place une veille technologique :<br>
+          - Une veille technologique,quant à elle, est le fait de s'informé sur les différentes innovations et technologies disponibles sur un marché en rapport avec les TIC (Technologies de l'Information et de la Communication).<br><br>
+          Faire une veille est très important car il est necessaire d'être à l'affût des dernières nouveautées, et l'informatique étant un domaine qui évolue sans cesse. Cela permet de ne pas avoir des outils obsolètes<br>
+          Pour ma veille technologique, j'ai utilisé l'application web Feedly, qui permet d'avoir une veille en fonction d'un sujet ou des sites web que l'on suit.<br><br>
+          Pour ma part je suis différents site web et blog: Frandroid, Toms Guide, Numerama, Clubic, 01Net.<br>
+          J'utilise également beaucoup un iste web du nom de Hebdoo qui permet de faire un résumer de la semaine sur le domaine des nouvelles technologies.<br>
+          Mon sujet de veille technologique est la suivante:<br><br>
+          <span class="text-center text-[#DA5759] font-semibold">L'analyse et le traitement des données à caractère personnel.</span></p>
+          <router-link to="/veilles" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-auto h-auto tracking-widest mx-auto">Voir ma veille</router-link>
+      </div>
+    </section>
+    <section>
+      <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
         <h2 class="text-3xl font-bold text-center mx-auto">Me contacter</h2>
         <Contact/>
       </div>
