@@ -26,14 +26,14 @@
           J’ai réalisé un BTS SIO en 2 ans à l’Institut Supérieur de Saint-Denis à Annonay.
           Durant cette formation, j’ai décidé de me spécialisé dans le développement avec l’option SLAM. Avec mes projets de cours, mes stages,
           j’ai pu apprendre:</div>
-          <ul class="flex flex-row flex-wrap gap-2 mx-auto space-x-4 p-3">
+          <ul class="flex flex-row flex-wrap gap-2 mx-auto space-x-4 p-3 justify-center">
             <li class="py-1 px-3 text-white text-sm rounded-md h-auto w-auto" v-for="tech in this.langages.techno" v-bind:key="tech" :style="'background-color: #' + tech.color">{{ tech.name }}</li>
           </ul>
         </div>
         <div class="">
           <div class="flex-col">
           <div class="flex flex-row space-x-14 justify-center mt-5">
-            <div class="flex-row text-7xl">+7
+            <div class="flex-row text-7xl">+6
               <div class="text-base">Projets</div>
             </div>
             <div class="flex-row text-7xl">+2
@@ -45,6 +45,19 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
+        <h2 class="text-3xl font-bold text-center mx-auto">Mes projets</h2>
+        <div class="flex flex-col gap-20" >
+          <div v-for="row in Realisation" v-bind:key="row" class="gap-16">
+            <Projects :data="row" />
+          </div>
+        </div>
+        <div>
+          <router-link to="/projects" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto">Voir plus</router-link>
+        </div>
+      </div>
+    </section>
   <Footer/>
   </div>
 </template>
@@ -52,14 +65,21 @@
 <script>
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
+import Projects from '@/components/Projects.vue';
 
 export default {
-  components: { Navbar, Footer },
+  components: { Navbar, Footer, Projects },
   name: 'Technologie',
   data() {
     return {
       langages: '',
     };
+  },
+  computed: {
+    Realisation() {
+      const allRealisation = this.$store.state.realisation;
+      return allRealisation.slice(0, 2);
+    },
   },
   methods: {
     Technologie() {
