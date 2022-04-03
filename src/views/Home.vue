@@ -10,9 +10,9 @@
             <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en développement web.</div>
             <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start">
               <button class="bg-[#DA5759] px-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest flex-row" href="#">Commencer</button>
-              <button class="border-2 border-white p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-14 tracking-widest flex-row" href="#">Voir mes projets
+              <router-link class="border-2 border-white p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-14 tracking-widest flex-row" to="/">Voir mes projets
                 <img class="m-auto mt-1 flex mx-auto" src="@/assets/Arrow.png" alt="flèche pour voir mes projets">
-              </button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
               <div class="text-base">Expériences</div>
             </div>
           </div>
-          <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10">CV</button>
+          <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/CV.pdf" download="">CV</a></button>
           </div>
         </div>
       </div>
@@ -58,6 +58,12 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
+        <h2 class="text-3xl font-bold text-center mx-auto">Me contacter</h2>
+        <Contact/>
+      </div>
+    </section>
   <Footer/>
   </div>
 </template>
@@ -66,9 +72,15 @@
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
 import Projects from '@/components/Projects.vue';
+import Contact from '@/components/Contact.vue';
 
 export default {
-  components: { Navbar, Footer, Projects },
+  components: {
+    Navbar,
+    Footer,
+    Projects,
+    Contact,
+  },
   name: 'Technologie',
   data() {
     return {

@@ -101,10 +101,6 @@ export default createStore({
         projectOrigine: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectObjectif: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectDescription: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
-        maquetteImg: '',
-        // maquetteWebsite: 'Figma',
-        // maquetteLink: 'https://www.figma.com/file/HNjXAxTcOt5VWuJ5YGmR1e/Website?node-id=0%3A1',
-        comment: '',
       },
       {
         id: 1,
@@ -160,7 +156,7 @@ export default createStore({
             link: '#',
           },
         ],
-        img: 'covoit.webp',
+        img: '@/assets/covoit.png',
         projectPartenaire: [
           {
             name: 'Tristan',
