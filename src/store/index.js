@@ -122,7 +122,7 @@ export default createStore({
             color: 'DD4B25',
           },
         ],
-        shortDesc: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
+        shortDesc: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années. ',
         website: '',
         githubLinks: [
           {
@@ -139,13 +139,13 @@ export default createStore({
         websiteLinks: [
           {
             linkName: 'Website',
-            link: '#',
+            link: 'https://boudra-tristan.fr/',
           },
         ],
         img: '@/assets/portfolio.png',
         projectOrigine: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectObjectif: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
-        projectDescription: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
+        projectDescription: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années. Il me permet également de présenter l\'ensemble de mes compétences acquis et de les présenter d\'une façon plus créative.',
       },
       {
         id: 1,
@@ -178,7 +178,7 @@ export default createStore({
             color: 'EBD41C',
           },
         ],
-        shortDesc: 'Web App de covoiturage',
+        shortDesc: 'Application de covoiturage permettant de créer ou de rejoindre un voyage.',
         githubLinks: [
           {
             linkName: 'Github Front',
@@ -198,7 +198,7 @@ export default createStore({
         websiteLinks: [
           {
             linkName: 'Website',
-            link: '#',
+            link: 'http://covoit.erwan-decoster.com/',
           },
         ],
         img: '@/assets/covoit.png',
@@ -237,13 +237,6 @@ export default createStore({
         maquetteImg: '',
         maquetteWebsite: 'Figma',
         maquetteLink: 'https://www.figma.com/file/IlDMB37HhdRwhDEbAcXcsz/CoVoit?node-id=0%3A1',
-        mcdImg: '',
-        mcdLink: '',
-        mldImg: '',
-        mldLink: '',
-        mpdImg: '',
-        mpdLink: '',
-        comment: '',
       },
       {
         id: 2,
@@ -260,7 +253,7 @@ export default createStore({
             color: 'E48E00',
           },
         ],
-        shortDesc: 'Partie administration de l\'application Covoit',
+        shortDesc: 'Partie administration de l\'application Covoit permettant de modifier, supprimer, ajouter un utilisateur, voyage, véhicules.',
         website: '',
         githubLinks: [
           {
@@ -287,7 +280,6 @@ export default createStore({
         maquetteImg: '',
         maquetteWebsite: 'Figma',
         maquetteLink: 'https://www.figma.com/file/hV8tFOXZ5o6TAeCFUg5ca2/Untitled?node-id=0%3A1',
-        comment: '',
       },
       {
         id: 3,
@@ -321,17 +313,15 @@ export default createStore({
         websiteLinks: [
           {
             linkName: 'Website',
-            link: '#',
+            link: 'https://www.projet-kathekon.com/',
           },
         ],
         img: '',
         projectOrigine: 'Création d’un site web pour un client spécialisé dans la démarche RSE',
         projectObjectif: 'Répondre aux besoins du clients afin que le site web soit représentatif de son activité',
-        projectDescription: '--',
+        projectDescription: '',
         maquetteImg: '',
         maquetteWebsite: 'Figma',
-        maquetteLink: '',
-        comment: '',
       },
       {
         id: 4,
@@ -357,7 +347,7 @@ export default createStore({
         websiteLinks: [
           {
             linkName: 'Website',
-            link: '#',
+            link: 'https://www.vm-automation.com/',
           },
         ],
         shortDesc: 'Site web pour une entreprise spécialisé en instrumentation, régulation et automatisation de procédés industriels',
@@ -371,11 +361,7 @@ export default createStore({
         img: '',
         projectOrigine: 'Création d’un site web pour un client spécialisé en instrumentation, régulation et automatisation de procédés industriels',
         projectObjectif: 'Répondre aux besoins du clients afin que le site web soit représentatif de son activité',
-        projectDescription: '--',
-        maquetteImg: '',
-        maquetteWebsite: 'Figma',
-        maquetteLink: '',
-        comment: '',
+        projectDescription: 'Le projet VM-Automation doit répondre aux différentes exigences du client notamment que le site web doit être représentatif de son activité industriel',
       },
       {
         id: 5,
@@ -419,7 +405,7 @@ export default createStore({
         img: '',
         projectOrigine: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectObjectif: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
-        projectDescription: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
+        projectDescription: 'Ce portfolio est une première version de ce portfolio actuelle. Après avoir progresser et appris de nouvelle compétences, j\'ai décider d\'abandonner celui-là au profit du portfolio sur lequel vous êtes actuellement.',
         maquetteImg: '',
         maquetteWebsite: 'Figma',
         maquetteLink: '',

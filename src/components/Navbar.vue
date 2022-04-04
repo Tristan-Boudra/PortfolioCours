@@ -3,7 +3,7 @@
     <div class="">
       <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center md:h-max">
         <div class="flex items-center justify-between">
-          <router-link to="#" class="">
+          <router-link to="/" class="">
             <img src="@/assets/Tristan.svg" class="px-4 py-1">
           </router-link>
           <!-- Mobile menu button -->

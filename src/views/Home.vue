@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="flex flex-row gap-8 justify-center">
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/CV.pdf" download="">CV</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent"  href="#">CV</a></button>
             <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/CV.pdf" download="">Certification ANSSI</a></button>
           </div>
           </div>
@@ -77,7 +77,7 @@
     <section id="veilles">
       <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
         <h2 class="text-3xl font-bold text-center mx-auto">Veilles</h2>
-        <p class="text-left p-4">Une veille est une activité consistant à s'informer sur les dernières avancées et informations d'un secteur donné.<br>
+        <p class="text-left p-6">Une veille est une activité consistant à s'informer sur les dernières avancées et informations d'un secteur donné.<br>
           Durant ce BTS SIO, nous avons dû mettre en place une veille technologique :<br>
           - Une veille technologique,quant à elle, est le fait de s'informé sur les différentes innovations et technologies disponibles sur un marché en rapport avec les TIC (Technologies de l'Information et de la Communication).<br><br>
           Faire une veille est très important car il est necessaire d'être à l'affût des dernières nouveautées, et l'informatique étant un domaine qui évolue sans cesse. Cela permet de ne pas avoir des outils obsolètes<br>

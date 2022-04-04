@@ -16,7 +16,7 @@
           <p class="text-left">{{ realisation.projectDescription }}</p>
         </div>
         <div class="flex justify-center space-x-6 mx-auto md:justify-start">
-          <ul class="flex gap-2 flex-wrap">
+          <ul class="flex gap-2 flex-wrap space-x-5">
             <li v-for="github in this.realisation.githubLinks" v-bind:key="github">
               <a class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-auto tracking-widest" :href="github.link">{{ github.linkName }}</a>
             </li>

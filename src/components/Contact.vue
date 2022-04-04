@@ -1,14 +1,14 @@
 <template>
   <div>
-    <form @submit.prevent="submit" class="grid md:grid-cols-2 gap-6" novalidate="true">
+    <form @submit.prevent="submit" class="grid md:grid-cols-2 gap-6 p-6" novalidate="true">
       <div class="md:col-span-2 grid gap-2">
         <div v-show="errors.length">
           <ul class="grid gap-2">
-            <li v-for="error in errors" v-bind:key="error" class="bg-red-200 px-2 py-1 rounded duration-200">{{ error }}</li>
+            <li v-for="error in errors" v-bind:key="error" class="bg-red-500 px-2 py-1 rounded duration-200">{{ error }}</li>
           </ul>
         </div>
         <div v-if="messageSend">
-          <p class="bg-emarald-500 px-2 py-1 rounded duration-200">Message envoyé avec succès</p>
+          <p class="bg-emerald-500 px-2 py-1 rounded duration-200">Message envoyé avec succès</p>
         </div>
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
@@ -31,7 +31,7 @@
         <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Message:</label>
         <textarea class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" name="message" id="message" cols="40" rows="10" v-model="message"></textarea>
       </div>
-      <input class="md:col-span-2 ml-auto cursor-pointer px-5 py-2 bg-[#DA5759] transition duration-200 text-[#000000] font-bold rounded-xl flex items-center w-fit" value="Envoyer" type="submit" name="" id="">
+      <input class="md:col-span-2 mx-auto cursor-pointer mt-5 px-5 py-2 bg-[#DA5759] transition duration-200 text-[#000000] font-bold rounded-xl flex items-center w-fit" value="Envoyer" type="submit" name="" id="">
     </form>
   </div>
 </template>
@@ -102,7 +102,7 @@ export default {
         Password: '166B7F9DE4837B73CD686474585DF4CDAC50',
         To: 'boudratristan@gmail.com',
         From: 'boudratristan@gmail.com',
-        Subject: 'Formulaire SiteWeb',
+        Subject: 'Formulaire portfolio',
         Body: `<html><h2>${this.name} ${this.surname} </h2><p style="font-size: 14px; margin: 0;"><strong>Email : ${this.email}</strong></p><p style="font-size: 14px; margin: 0;"><strong>Object : ${this.object}</strong></p><br></br><pre style="font-size: 14px;  margin: 0;"><strong>message : </strong><br>${this.message}</pre></html>`,
       }).then(
         (message) => this.verifEmailSending(message),
@@ -126,7 +126,7 @@ export default {
           console.log(this.messageSend);
         }, 10000);
       } else {
-        this.errors.push('Une erreur durant l\'envoi est survenue, réessayée !');
+        this.errors.push('Une erreur durant l\'envoi est survenue, réessayé !');
       }
     },
   },
