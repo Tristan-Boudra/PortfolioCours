@@ -5,12 +5,12 @@
     <section class="max-w-screen-lg mx-auto">
       <div class="mt-20 w-full grid md:grid-cols-2">
         <div class="flex-col">
-          <div class="gap-4 text-[#FFFFFF] mt-20 mx-auto ">
+          <div class="gap-4 text-[#FFFFFF] mt-20 mx-auto p-10 sm:pl-0">
             <div class="w-full text-7xl pb-10 font-black md:text-left">Boudra<br>Tristan</div>
             <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en développement web.</div>
             <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start">
-              <button class="bg-[#DA5759] px-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest flex-row" href="#">Commencer</button>
-              <router-link class="border-2 border-white p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-14 tracking-widest flex-row" to="/">Voir mes projets
+              <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest transition duration-600"><a class="bg-transparent" href="/#realisation">Commencer</a></button>
+              <router-link class="border-2 border-white p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-full tracking-widest flex-row" to="/projects">Voir mes projets
                 <img class="m-auto mt-1 flex mx-auto" src="@/assets/Arrow.png" alt="flèche pour voir mes projets">
               </router-link>
             </div>
@@ -23,14 +23,13 @@
       <div class="flex text-[#FFFFFF] gap-4 mt-20 flex-col md:flex-row">
         <div class="flex flex-col">
           <div class="flex-row text-left w-30 mx-auto p-10 lg:pl-0">
-          J’ai réalisé un BTS SIO en 2 ans à l’Institut Supérieur de Saint-Denis à Annonay.
-          Durant cette formation, j’ai décidé de me spécialisé dans le développement avec l’option SLAM. Avec mes projets de cours, mes stages,
-          j’ai pu apprendre:</div>
+            Titulaire d'un Bac STI2D, je suis actuellement en 2eme année de BTS SIO. Plus précisément en option SLAM (Solutions Logicielles et Applications Métiers) à l’Institut Supérieur de Saint-Denis à Annonay.
+            Avec mes projets de cours, personnels, ainsi que mes stages, j’ai pu apprendre:</div>
           <ul class="flex flex-row flex-wrap gap-2 mx-auto space-x-4 p-3 justify-center">
             <li class="py-1 px-3 text-white text-sm rounded-md h-auto w-auto" v-for="tech in this.langages.techno" v-bind:key="tech" :style="'background-color: #' + tech.color">{{ tech.name }}</li>
           </ul>
         </div>
-        <div class="">
+        <div class="p-2">
           <div class="flex-col">
           <div class="flex flex-row space-x-14 justify-center mt-5">
             <div class="flex-row text-7xl">+6
@@ -40,13 +39,30 @@
               <div class="text-base">Expériences</div>
             </div>
           </div>
-          <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/CV.pdf" download="">CV</a></button>
+          <div class="flex flex-row gap-8 justify-center">
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/CV.pdf" download="">CV</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/CV.pdf" download="">Certification ANSSI</a></button>
+          </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
+    <section id="bts">
+      <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20">
+        <h2 class="text-3xl font-bold text-center mx-auto">BTS SIO - SLAM</h2>
+        <div class="text-left">
+          <p class="mt-5">Le BTS Services informatique aux Organisations est un diplôme reconnu par l’état de niveau Bac+2. Il remplace depuis septembre 2011 l’ancien BTS informatique de Gestion (BTS IG). En effet, cette nouvelle formule répond aux attentes de la profession en matière de qualification. Le programme a évolué en fonction de la place et du rôle des TIC (Technologies d’Information Communication) et propose deux spécialités bien distinctes : le BTS SIO SISR et le BTS SIO SLAM.</p>
+          <p class="mt-5">L’option Solutions Logicielles et Applications Métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société). Les techniciens supérieurs en informatique option slam, sont préparés à plusieurs métiers en voici quelques uns:</p>
+          <ul class="mt-5">
+            <li>- Développeur d’applications informatiques</li>
+            <li>- Développeur informatique</li>
+            <li>- Programmeur d’applications</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="realisation">
+      <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20 grid gap-12">
         <h2 class="text-3xl font-bold text-center mx-auto">Mes projets</h2>
         <div class="flex flex-col gap-20" >
           <div v-for="row in Realisation" v-bind:key="row" class="gap-16">
@@ -58,7 +74,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="veilles">
       <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
         <h2 class="text-3xl font-bold text-center mx-auto">Veilles</h2>
         <p class="text-left p-4">Une veille est une activité consistant à s'informer sur les dernières avancées et informations d'un secteur donné.<br>
@@ -68,12 +84,12 @@
           Pour ma veille technologique, j'ai utilisé l'application web Feedly, qui permet d'avoir une veille en fonction d'un sujet ou des sites web que l'on suit.<br><br>
           Pour ma part je suis différents site web et blog: Frandroid, Toms Guide, Numerama, Clubic, 01Net.<br>
           J'utilise également beaucoup un iste web du nom de Hebdoo qui permet de faire un résumer de la semaine sur le domaine des nouvelles technologies.<br>
-          Mon sujet de veille technologique est la suivante:<br><br>
-          <span class="text-center text-[#DA5759] font-semibold">L'analyse et le traitement des données à caractère personnel.</span></p>
+          Mon sujet de veille technologique est la suivante:</p>
+          <span class="text-2xl text-[#DA5759] font-bold mx-auto">L'analyse et le traitement des données à caractère personnel.</span>
           <router-link to="/veilles" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-auto h-auto tracking-widest mx-auto">Voir ma veille</router-link>
       </div>
     </section>
-    <section>
+    <section id="contact">
       <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
         <h2 class="text-3xl font-bold text-center mx-auto">Me contacter</h2>
         <Contact/>

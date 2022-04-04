@@ -1,18 +1,37 @@
 <template>
-  <header class="p-4 fixed inset-x-0 z-20 top-0">
-    <div class="max-w-screen-lg mx-auto">
-      <nav class="flex justify-between">
-        <img src="@/assets/Tristan.svg" class="px-4 py-1">
-        <ul>
-          <li class="flex gap-4">
-            <router-link to="/" class="px-4 py-2">Accueil</router-link>
-            <router-link to="/" class="px-4 py-2">A propos de moi</router-link>
-            <router-link to="/" class="px-4 py-2">Projets</router-link>
-            <router-link to="/" class="px-4 py-2">Veilles</router-link>
-            <router-link to="/" class="px-4 py-2">Me contacter</router-link>
-          </li>
+  <div class="max-w-screen-lg mx-auto">
+    <div class="">
+      <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center md:h-max">
+        <div class="flex items-center justify-between">
+          <router-link to="#" class="">
+            <img src="@/assets/Tristan.svg" class="px-4 py-1">
+          </router-link>
+          <!-- Mobile menu button -->
+          <div @click="showMenu = !showMenu" class="flex md:hidden">
+            <button type="button" class="text-[#DA5759]">
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path></svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+        <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 gap-3">
+          <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/">Accueil</a></li>
+          <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/#bts">BTS SIO</a></li>
+          <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/projects">Projets</a></li>
+          <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/veilles">Veilles</a></li>
+          <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showMenu: false,
+    };
+  },
+};
+</script>

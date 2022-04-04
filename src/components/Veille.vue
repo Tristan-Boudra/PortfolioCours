@@ -3,12 +3,14 @@
     <Navbar/>
     <!-- Pour faire une section carré -->
     <section class="max-w-screen-lg mx-auto">
-        <div class="flex grid-cols-3 mt-20 border border-[#DA5759] rounded-lg p-3 gap-8">
-            <div class="flex flex-col grid">
+        <div class="flex mt-20 border border-[#DA5759] rounded-lg p-3 h-96">
+            <div class="flex flex-col">
                 <h2 class="font-bold text-xl text-[#DA5759]">{{ data.name }}</h2>
                 <img src="" alt="">
                 <p class="mt-5 p-3">{{ data.description }}</p>
-                <a class="italic mt-5 transition transition-200 hover:text-[#DA5759]" href="">En savoir plus</a>
+                <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-auto h-auto tracking-widest mx-auto mb-0">
+                  <a class="mt-5 transition transition-200 bg-transparent" href="">En savoir plus</a>
+                </button>
             </div>
         </div>
     </section>

@@ -2,10 +2,10 @@
   <div class="w-full">
     <Navbar/>
     <section class="max-w-screen-lg mx-auto">
-      <div class="max-w-screen-lg mx-auto px-3 py-20 grid gap-12">
-        <h2 class="text-3xl font-bold text-center mx-auto">Mes projets</h2>
-        <div class="flex flex-col gap-20" >
-          <div v-for="row in Veilles" v-bind:key="row" class="gap-16">
+      <div class="px-3 py-20">
+        <h2 class="text-3xl font-bold text-center mx-auto mt-3">Mes projets</h2>
+        <div class="flex grid md:grid-cols-2 gap-14">
+          <div v-for="row in Veilles" v-bind:key="row">
             <Veille :data="row" />
           </div>
         </div>

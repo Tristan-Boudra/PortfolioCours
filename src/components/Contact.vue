@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form @submit.prevent="submit" class="grid md:grid-cols-2 gap-6">
+    <form @submit.prevent="submit" class="grid md:grid-cols-2 gap-6" novalidate="true">
       <div class="md:col-span-2 grid gap-2">
         <div v-show="errors.length">
           <ul class="grid gap-2">
@@ -8,36 +8,36 @@
           </ul>
         </div>
         <div v-if="messageSend">
-          <p class="bg-green-200 px-2 py-1 rounded duration-200">Message envoyé avec succès</p>
+          <p class="bg-emarald-500 px-2 py-1 rounded duration-200">Message envoyé avec succès</p>
         </div>
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
         <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Nom:</label>
-        <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80"  type="text" id="name" name="name" autocomplete="name">
+        <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80"  type="text" id="name" name="name" autocomplete="name" v-model="name">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
         <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Prénom:</label>
-        <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="surname" name="surname" autocomplete="name">
+        <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="surname" name="surname" autocomplete="surname" v-model="surname">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
         <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Objet:</label>
-        <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="object" name="object" autocomplete="objet">
+        <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="object" name="object" autocomplete="objet" v-model="object">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
         <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Mail:</label>
-        <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="email" name="email" autocomplete="email">
+        <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="email" name="email" autocomplete="email" v-model="email">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
         <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Message:</label>
-        <textarea class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" name="message" id="message" cols="40" rows="10"></textarea>
+        <textarea class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" name="message" id="message" cols="40" rows="10" v-model="message"></textarea>
       </div>
-      <input class="md:col-span-2 ml-auto cursor-pointer px-5 py-2 bg-[#DA5759] transition duration-200 text-[#000000] font-bold rounded-xl flex items-center w-fit" type="submit" name="" id="">
+      <input class="md:col-span-2 ml-auto cursor-pointer px-5 py-2 bg-[#DA5759] transition duration-200 text-[#000000] font-bold rounded-xl flex items-center w-fit" value="Envoyer" type="submit" name="" id="">
     </form>
   </div>
 </template>
 
 <script>
-// import smtp from '@/customeScript/smtp';
+import smtp from '@/customeScript/smtp';
 
 export default {
   data() {
@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     checkForm() {
-      // console.log('in checkForm');
+      console.log('in checkForm');
       if (this.name && this.surname && this.email && this.validEmail(this.email) && this.object && this.message && !(this.message.length <= 20) && !this.messageSend) {
         this.errors = [];
         return true;
@@ -61,7 +61,7 @@ export default {
       console.log(this.messageSend);
       this.errors = [];
       if (this.messageSend) {
-        this.errors.push('Vous venez d\'envoyer le mail, attendez quelques secondes.');
+        this.errors.push('Le message a déjà été envoyé attendais quelques secondes.');
       }
       if (!this.name) {
         this.errors.push('Le champ Nom doit être rempli.');
@@ -94,20 +94,20 @@ export default {
       }
       this.sendEmail();
     },
-    // sendEmail() {
-    //   console.log('in sendemail');
-    //   smtp.send({
-    //     Host: 'smtp.gmail.com',
-    //     Username: 'wanerd2@gmail.com',
-    //     Password: 'qjgwacsljxwhykjr',
-    //     To: 'wanerd2@gmail.com',
-    //     From: 'website@erwan-decoster.com',
-    //     Subject: 'Formulaire SiteWeb',
-    //     Body: `<html><h2>${this.name} - </h2><p style="font-size: 14px; margin: 0;"><strong>email : ${this.email}</strong></p><p style="font-size: 14px; margin: 0;"><strong>tel : ${this.tel}</strong></p><br></br><pre style="font-size: 14px;  margin: 0;"><strong>message : </strong><br>${this.message}</pre></html>`,
-    //   }).then(
-    //     (message) => this.verifEmailSending(message),
-    //   );
-    // },
+    sendEmail() {
+      console.log('in sendemail');
+      smtp.send({
+        Host: 'smtp.elasticemail.com',
+        Username: 'boudratristan@gmail.com',
+        Password: '166B7F9DE4837B73CD686474585DF4CDAC50',
+        To: 'boudratristan@gmail.com',
+        From: 'boudratristan@gmail.com',
+        Subject: 'Formulaire SiteWeb',
+        Body: `<html><h2>${this.name} ${this.surname} </h2><p style="font-size: 14px; margin: 0;"><strong>Email : ${this.email}</strong></p><p style="font-size: 14px; margin: 0;"><strong>Object : ${this.object}</strong></p><br></br><pre style="font-size: 14px;  margin: 0;"><strong>message : </strong><br>${this.message}</pre></html>`,
+      }).then(
+        (message) => this.verifEmailSending(message),
+      );
+    },
     verifEmailSending(message) {
       console.log('in verifEmailSending');
       console.log(message);
@@ -134,11 +134,11 @@ export default {
     if (localStorage.name) {
       this.name = localStorage.name;
     }
-    if (localStorage.surname) {
-      this.name = localStorage.name;
-    }
     if (localStorage.email) {
       this.email = localStorage.email;
+    }
+    if (localStorage.tel) {
+      this.tel = localStorage.tel;
     }
     if (localStorage.object) {
       this.object = localStorage.object;
@@ -152,7 +152,7 @@ export default {
       localStorage.name = newName;
     },
     surname(newSurname) {
-      localStorage.name = newSurname;
+      localStorage.surname = newSurname;
     },
     email(newEmail) {
       localStorage.email = newEmail;
