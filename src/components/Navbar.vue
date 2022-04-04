@@ -15,10 +15,10 @@
         </div>
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 gap-3">
-          <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/">Accueil</a></li>
+          <router-link to="/" class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded">Accueil</router-link>
           <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/#bts">BTS SIO</a></li>
-          <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/projects">Projets</a></li>
-          <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/veilles">Veilles</a></li>
+          <router-link to="/projects" class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded">Projets</router-link>
+          <router-link to="/veilles" class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded">Veilles</router-link>
           <li><a class="hover:bg-[#DA5759] hover:text-[#000000] hover:transition hover:duration-100 hover:font-semibold rounded" href="/#contact">Contact</a></li>
         </ul>
       </nav>
