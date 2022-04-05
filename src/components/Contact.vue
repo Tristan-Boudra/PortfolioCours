@@ -97,9 +97,7 @@ export default {
     sendEmail() {
       console.log('in sendemail');
       smtp.send({
-        Host: 'smtp.elasticemail.com',
-        Username: 'boudratristan@gmail.com',
-        Password: '166B7F9DE4837B73CD686474585DF4CDAC50',
+        SecureToken: 'a7c56475-4da5-4cfc-828a-c0aa64446c92',
         To: 'boudratristan@gmail.com',
         From: 'boudratristan@gmail.com',
         Subject: 'Formulaire portfolio',
