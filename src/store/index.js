@@ -123,7 +123,7 @@ export default createStore({
           },
         ],
         shortDesc: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années. ',
-        website: '',
+        website: 'https://boudra-tristan.fr/',
         githubLinks: [
           {
             linkName: 'Github',
@@ -186,13 +186,13 @@ export default createStore({
           },
           {
             linkName: 'Github Back',
-            link: 'https://github.com/ErwanDecoster/Covoit',
+            link: 'https://github.com/Tristan-Boudra/CovoitBackEnd',
           },
         ],
         figmaLinks: [
           {
             linkName: 'Figma',
-            link: 'https://www.figma.com/file/HNjXAxTcOt5VWuJ5YGmR1e/Website?node-id=0%3A1',
+            link: 'https://www.figma.com/file/IlDMB37HhdRwhDEbAcXcsz/CoVoit',
           },
         ],
         websiteLinks: [
@@ -270,7 +270,7 @@ export default createStore({
         websiteLinks: [
           {
             linkName: 'Website',
-            link: '#',
+            link: '',
           },
         ],
         img: '',
@@ -296,20 +296,34 @@ export default createStore({
             color: '281E75',
           },
         ],
+        mission: [
+          {
+            description: 'J\'ai commencer par créer une page de blog qui leur permettait de rajouter des articles en fonction de l\'actualité.',
+            img: '',
+          },
+          {
+            description: 'Ensuite j\'ai mis en place un carousel permettant à Kathekon de montrer aux clients toutes les entreprises qui ont travailler avec eux.',
+            img: '',
+          },
+          {
+            description: 'Sur une autre page, j\'ai détailler toutes les entreprises qui ont travailler avec Kathekon avec les missions réalisées.',
+            img: '',
+          },
+          {
+            description: 'Création du footer où l\'on retrouve toutes les informations pour contacter les responsable de Kathekon ainsi que leur réseaux sociaux.',
+            img: '',
+          },
+          {
+            description: 'Finalisation des headers avec l\'achat des photos qui étaient sous licence.',
+            img: '',
+          },
+          {
+            description: 'Finalisation du site avec l\'ensemble des textes après plusieurs modifications.',
+            img: '',
+          },
+        ],
         shortDesc: 'Site web pour une entreprise spécialisé dans le RSE',
         website: 'https://www.projet-kathekon.com/',
-        githubLinks: [
-          {
-            linkName: 'Github',
-            link: 'https://github.com/Tristan-Boudra/Kathekon',
-          },
-        ],
-        figmaLinks: [
-          {
-            linkName: 'Figma',
-            link: 'https://www.figma.com/file/HNjXAxTcOt5VWuJ5YGmR1e/Website?node-id=0%3A1',
-          },
-        ],
         websiteLinks: [
           {
             linkName: 'Website',
@@ -318,8 +332,8 @@ export default createStore({
         ],
         img: '',
         projectOrigine: 'Création d’un site web pour un client spécialisé dans la démarche RSE',
-        projectObjectif: 'Répondre aux besoins du clients afin que le site web soit représentatif de son activité',
-        projectDescription: '',
+        projectObjectif: '',
+        projectDescription: 'L\'entreprise Kathekon est spécialiser dans le conseil en RSE (Responsabilité Societale de l\'entreprise). De ce faite, le site est en adéquation avec les valeurs que veulent faire véhiculer les responsables de Kathekon.',
         maquetteImg: '',
         maquetteWebsite: 'Figma',
       },
@@ -338,10 +352,26 @@ export default createStore({
             color: '281E75',
           },
         ],
-        figmaLinks: [
+        mission: [
           {
-            linkName: 'Figma',
-            link: 'https://www.figma.com/file/HNjXAxTcOt5VWuJ5YGmR1e/Website?node-id=0%3A1',
+            description: 'J\'ai commencer par créer des cards avec toutes les entreprises où il est déjà intervenu. C\'est card sont réaliser uniquement en HTML & CSS.',
+            img: '@/assets/',
+          },
+          {
+            description: 'Création de toutes les pages pour chaque entreprise où il est intervenu, un explicatif des tâches réaliser.',
+            img: '',
+          },
+          {
+            description: 'Création du footer où l\'on retrouve toutes les informations de contact.',
+            img: '',
+          },
+          {
+            description: 'Ajout de vignette montrant l\'ensemble de ses compétences et savoir faire.',
+            img: '',
+          },
+          {
+            description: 'Ajout d\'un slider représentant les entreprises avec qui il a travailler.',
+            img: '',
           },
         ],
         websiteLinks: [
@@ -352,15 +382,9 @@ export default createStore({
         ],
         shortDesc: 'Site web pour une entreprise spécialisé en instrumentation, régulation et automatisation de procédés industriels',
         website: 'https://www.vm-automation.com/',
-        githubLinks: [
-          {
-            linkName: 'Github',
-            link: 'https://github.com/Tristan-Boudra/VM-Automation',
-          },
-        ],
         img: '',
         projectOrigine: 'Création d’un site web pour un client spécialisé en instrumentation, régulation et automatisation de procédés industriels',
-        projectObjectif: 'Répondre aux besoins du clients afin que le site web soit représentatif de son activité',
+        projectObjectif: '',
         projectDescription: 'Le projet VM-Automation doit répondre aux différentes exigences du client notamment que le site web doit être représentatif de son activité industriel',
       },
       {

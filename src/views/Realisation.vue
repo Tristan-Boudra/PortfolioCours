@@ -15,6 +15,14 @@
           <h2 class="text-left text-lg font-bold">Description du projet:</h2>
           <p class="text-left">{{ realisation.projectDescription }}</p>
         </div>
+        <h2 class="text-left text-lg font-bold">Missions réalisées:</h2>
+        <div class="gap-16">
+          <ul class="grid lg:grid-cols-3 md:grid-cols-2 p-3 gap-5">
+            <li class="py-1 px-3 text-left" v-for="tech in this.realisation.mission" v-bind:key="tech">{{ tech.description }}
+              <img class="mx-auto w-auto mb-0 rounded-lg mb-0" src="" alt="">
+            </li>
+          </ul>
+        </div>
         <div class="flex justify-center space-x-6 mx-auto md:justify-start">
           <ul class="flex gap-2 flex-wrap space-x-5">
             <li v-for="github in this.realisation.githubLinks" v-bind:key="github">

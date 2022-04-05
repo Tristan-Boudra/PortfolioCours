@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="flex flex-row gap-8 justify-center">
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent"  href="#">CV</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="">CV</a></button>
             <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/CV.pdf" download="">Certification ANSSI</a></button>
           </div>
           </div>
@@ -50,7 +50,7 @@
     <section id="bts">
       <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20">
         <h2 class="text-3xl font-bold text-center mx-auto">BTS SIO - SLAM</h2>
-        <div class="text-left">
+        <div class="text-left p-3">
           <p class="mt-5">Le BTS Services informatique aux Organisations est un diplôme reconnu par l’état de niveau Bac+2. Il remplace depuis septembre 2011 l’ancien BTS informatique de Gestion (BTS IG). En effet, cette nouvelle formule répond aux attentes de la profession en matière de qualification. Le programme a évolué en fonction de la place et du rôle des TIC (Technologies d’Information Communication) et propose deux spécialités bien distinctes : le BTS SIO SISR et le BTS SIO SLAM.</p>
           <p class="mt-5">L’option Solutions Logicielles et Applications Métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société). Les techniciens supérieurs en informatique option slam, sont préparés à plusieurs métiers en voici quelques uns:</p>
           <ul class="mt-5">
@@ -125,6 +125,19 @@ export default {
     },
   },
   methods: {
+    // downloadItem ({ url, label }) {
+    //   Axios.get(url, { responseType: 'blob' })
+    //     .then(response => {
+    //       const blob = new Blob([response.data], { type: 'application/pdf' });
+    //       const link = document.createElement('a');
+    //       link.href = URL.createObjectURL(blob);
+    //       link.download = label;
+    //       link.click();
+    //       URL.revokeObjectURL(link.href);
+    //     }).catch(console.error);
+    // },
+
+    // v-text="item.label" :href="" @click.prevent="downloadItem(item)
     Technologie() {
       const langage = this.$store.state.langages;
       langage.forEach((langages) => {
