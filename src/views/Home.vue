@@ -61,6 +61,33 @@
         </div>
       </div>
     </section>
+    <section id="stages">
+      <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20">
+        <h2 class="text-3xl font-bold text-center mx-auto">Stage</h2>
+        <div class="grid md:grid-cols-2 p-5 gap-5 rounded-lg">
+          <div class="border border-red-500 rounded-lg">
+            <h2 class="text-xl p-3 font-bold mx-auto">Les Jardins de Brogieux</h2>
+            <img class="w-40 rounded-lg mx-auto p-3" src="@/assets/jardins_brogieux.jpeg" alt="">
+            <div>
+              <h3><span class="font-bold">Date:</span> juin 2021</h3>
+              <p class="p-3">Les Jardins de Brogieux est un ensemble de jardins à visiter ainsi qu'une ancienne maison forte et toutes l'histoire liés à cela</p>
+            </div>
+            <p class="p-3">-----</p>
+            <button class="bg-[#DA5759] w-auto p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><router-link class="bg-transparent" to="/realisation">En savoir plus</router-link></button>
+          </div>
+          <div class="border border-red-500 rounded-lg">
+            <h2 class="text-xl font-bold mx-auto p-3">Web At Heart</h2>
+            <img class="w-40 rounded-lg mx-auto p-3" src="@/assets/web-at-heart.png" alt="">
+            <div>
+              <h3><span class="font-bold">Date:</span> juin 2021</h3>
+              <p class="p-3">Web at Heart est une agence de communication Web et digitale 360° spécialisée dans le design et la création de site web sur mesure.</p>
+            </div>
+            <p class="p-3">----</p>
+            <button class="bg-[#DA5759] w-auto p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><router-link class="bg-transparent" to="/realisation">En savoir plus</router-link></button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="realisation">
       <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20 grid gap-12">
         <h2 class="text-3xl font-bold text-center mx-auto">Mes projets</h2>
@@ -125,19 +152,6 @@ export default {
     },
   },
   methods: {
-    // downloadItem ({ url, label }) {
-    //   Axios.get(url, { responseType: 'blob' })
-    //     .then(response => {
-    //       const blob = new Blob([response.data], { type: 'application/pdf' });
-    //       const link = document.createElement('a');
-    //       link.href = URL.createObjectURL(blob);
-    //       link.download = label;
-    //       link.click();
-    //       URL.revokeObjectURL(link.href);
-    //     }).catch(console.error);
-    // },
-
-    // v-text="item.label" :href="" @click.prevent="downloadItem(item)
     Technologie() {
       const langage = this.$store.state.langages;
       langage.forEach((langages) => {

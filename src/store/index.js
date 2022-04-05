@@ -211,27 +211,50 @@ export default createStore({
         projectOrigine: 'Après avoir réfléchi sur ce que l’on voulait faire, nous avons opté de partir sur la création d’une application déjà existante qui est Blablacar. Notre application a pour but d’être gratuite pour tous les utilisateurs. Ceci a pour effet de toucher une plus grande partie de la population en optant pour ce modèle économique.',
         projectObjectif: 'Créer une application ayant une excellente accessibilité pour toutes les tranches d’âge de la population. Créer des fonctionnalités et une interface ergonomique. Avoir une application simple d’utilisation.',
         projectDescription: 'Il s’agit d’un projet consistant à réaliser une web app de covoiturage adapté au mobile et au PC; le but: définir un point de départ et d\'arrivée et choisir les autres utilisateurs que l’on veut prendre sur notre passage ou inversement et trouver un conducteur pour aller la on l’on souhaite.',
-        foncionalites: [
+        fonctionalitesConducteur: [
           {
-            for: 'Conducteur',
-            foncionalitesFor: [
-              { name: 'Créer un voyage avec un point de départ et d’arrivée ainsi que l’heure de départ.' },
-              { name: 'Modifier ces informations personnelles: nom, prénom, téléphone, mot de passe.' },
-              { name: 'Visualiser les personnes acceptées dans son trajet, où est-ce qu’il doit le récupérer, les étapes intermédiaire' },
-              { name: 'Accepter ou refuser un utilisateur qui veut rejoindre son trajet.' },
-              { name: 'Choix du véhicule pour le voyage, ainsi que de la motorisation.' },
-            ],
+            title: 'Fonctionnalités',
           },
           {
+            for: 'Conducteur',
+          },
+          {
+            name: 'Créer un voyage avec un point de départ et d’arrivée ainsi que l’heure de départ.',
+          },
+          {
+            name: 'Modifier ces informations personnelles: nom, prénom, téléphone, mot de passe.',
+          },
+          {
+            name: 'Visualiser les personnes acceptées dans son trajet, où est-ce qu’il doit le récupérer, les étapes intermédiaire',
+          },
+          {
+            name: 'Accepter ou refuser un utilisateur qui veut rejoindre son trajet.',
+          },
+          {
+            name: 'Choix du véhicule pour le voyage, ainsi que de la motorisation.',
+          },
+        ],
+        fonctionalitesPassager: [
+          {
             for: 'Passager',
-            foncionalitesFor: [
-              { name: 'Rejoindre un voyage.' },
-              { name: 'Voir l\'ensemble des voyages.' },
-              { name: 'Voir toutes ces informations relatives à son compte: nom, prénom, téléphone.' },
-              { name: 'Modifier ces informations personnelles: nom, prénom, téléphone, mot de passe.' },
-              { name: 'Il recherche un conducteur pour faire son trajet, indique le point de départ et d’arrivée ainsi que l’horaire à laquel il part, à ce moment les trajets qui ont le même point d\'arrivée lui sont proposés.' },
-              { name: 'Programmer un départ.' },
-            ],
+          },
+          {
+            name: 'Rejoindre un voyage.',
+          },
+          {
+            name: 'Voir l\'ensemble des voyages.',
+          },
+          {
+            name: 'Voir toutes ces informations relatives à son compte: nom, prénom, téléphone.',
+          },
+          {
+            name: 'Modifier ces informations personnelles: nom, prénom, téléphone, mot de passe.',
+          },
+          {
+            name: 'Il recherche un conducteur pour faire son trajet, indique le point de départ et d’arrivée ainsi que l’horaire à laquel il part, à ce moment les trajets qui ont le même point d\'arrivée lui sont proposés.',
+          },
+          {
+            name: 'Programmer un départ.',
           },
         ],
         maquetteWebsite: 'Figma',
@@ -297,6 +320,9 @@ export default createStore({
         ],
         mission: [
           {
+            title: 'Missions réalisées:',
+          },
+          {
             description: 'J\'ai commencer par créer une page de blog qui leur permettait de rajouter des articles en fonction de l\'actualité.',
             img: '@/assets/blog.png',
           },
@@ -349,6 +375,9 @@ export default createStore({
           },
         ],
         mission: [
+          {
+            title: 'Missions réalisées:',
+          },
           {
             description: 'J\'ai commencer par créer des cards avec toutes les entreprises où il est déjà intervenu. C\'est card sont réaliser uniquement en HTML & CSS.',
             img: '@/assets/vignette.png',

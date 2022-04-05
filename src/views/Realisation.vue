@@ -2,25 +2,32 @@
   <div class="w-full">
     <Navbar/>
     <section class="max-w-screen-lg mx-auto mt-20">
-      <div class="max-w-screen-lg mx-auto px-3 py-20 grid gap-6">
+      <div class="max-w-screen-lg mx-auto px-3 grid gap-6">
         <h1 class="text-3xl font-bold text-center mx-auto">{{ this.realisation.name }}</h1>
         <!-- <img class="mx-auto rounded-lg mb-5" :src="require(`@/assets/${this.realisation.img}`)" alt=""> -->
         <div class="flex flex-col" >
-          <h2 class="text-left text-lg font-bold">Technologies utilisées:</h2>
+          <h2 class="text-left text-xl font-bold">Technologies utilisées:</h2>
           <ul class="flex gap-2 flex-wrap p-3">
             <li class="py-1 px-3 bg-red-500 text-white text-sm rounded-md" v-for="tech in this.realisation.techno" v-bind:key="tech" :style="'background-color: #' + tech.color">{{ tech.name }}</li>
           </ul>
         </div>
         <div>
-          <h2 class="text-left text-lg font-bold">Description du projet:</h2>
+          <h2 class="text-left text-xl font-bold">Description du projet:</h2>
           <p class="text-left">{{ realisation.projectDescription }}</p>
         </div>
-        <h2 class="text-left text-lg font-bold">Missions réalisées:</h2>
         <div class="gap-16">
-          <ul class="grid lg:grid-cols-3 md:grid-cols-2 p-3 gap-5">
-            <li class="py-1 px-3 text-left" v-for="tech in this.realisation.mission" v-bind:key="tech">{{ tech.description }}
+          <ul class="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
+            <li class="py-1 text-left" v-for="tech in this.realisation.mission" v-bind:key="tech"><span class="font-bold mb-2 text-xl">{{ tech.title }}</span>{{ tech.description }}
               <img class="mx-auto w-auto mb-0 rounded-lg mb-0" src="" alt="">
             </li>
+          </ul>
+        </div>
+        <div class="gap-16">
+          <ul class="gap-5 mt-5">
+            <li class="py-1 text-left" v-for="tech in this.realisation.fonctionalitesConducteur" v-bind:key="tech"><span class="font-bold mb-2 text-xl">{{ tech.title }}</span><span class="font-bold text-xl">{{ tech.for }}</span>{{ tech.name }}</li>
+            <div class="mt-5">
+              <li class="py-1 text-left" v-for="tech in this.realisation.fonctionalitesPassager" v-bind:key="tech"><span class="font-bold text-xl">{{ tech.for }}</span>{{ tech.name }}</li>
+            </div>
           </ul>
         </div>
         <div class="flex justify-center space-x-6 mx-auto md:justify-start">
