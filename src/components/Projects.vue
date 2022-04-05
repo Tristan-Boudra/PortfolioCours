@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <h1 class="text-2xl font-bold p-2 mb-5">{{ data.name }}</h1>
-    <img class="mx-auto rounded-lg mb-5 h-72 w-72" src="" alt="">
+    <img class="mx-auto rounded-lg mb-5 h-72 w-72" :src="require(`@/assets/${data.img}`)" alt="">
     <p class="mx-auto p-2 mb-6">{{ data.shortDesc }}</p>
     <ul class="flex gap-2 flex-wrap mx-auto justify-center mb-3">
       <li class="py-1 px-3 text-white text-sm rounded-md" v-for="tech in data.techno" v-bind:key="tech" :style="'background-color: #' + tech.color">{{ tech.name }}</li>

@@ -4,7 +4,7 @@
     <section class="max-w-screen-lg mx-auto mt-20">
       <div class="max-w-screen-lg mx-auto px-3 py-20 grid gap-6">
         <h1 class="text-3xl font-bold text-center mx-auto">{{ this.realisation.name }}</h1>
-        <img class="mx-auto rounded-lg mb-5" :src="this.realisation.img" alt="">
+        <!-- <img class="mx-auto rounded-lg mb-5" :src="require(`@/assets/${this.realisation.img}`)" alt=""> -->
         <div class="flex flex-col" >
           <h2 class="text-left text-lg font-bold">Technologies utilisées:</h2>
           <ul class="flex gap-2 flex-wrap p-3">
