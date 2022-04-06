@@ -7,7 +7,7 @@
         <div class="flex-col">
           <div class="gap-4 text-[#FFFFFF] mt-20 mx-auto p-10 sm:pl-0">
             <div class="w-full text-7xl pb-10 font-black md:text-left">Boudra<br>Tristan</div>
-            <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en développement web.</div>
+            <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en BTS SIO spécialisé dans le développement web.</div>
             <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start">
               <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest transition duration-600"><a class="bg-transparent" href="/#realisation">Commencer</a></button>
               <router-link class="border-2 border-white p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-full tracking-widest flex-row" to="/projects">Voir mes projets
@@ -20,7 +20,7 @@
           <img class="mx-auto rounded-3xl mt-24 w-48 md:w-34 lg:w-96" src="@/assets/Tristan.png" alt="Image de profile">
         </div>
       </div>
-      <div class="flex text-[#FFFFFF] gap-4 mt-20 flex-col md:flex-row">
+      <div class="flex text-[#FFFFFF] gap-4 mt-28 flex-col md:flex-row">
         <div class="flex flex-col">
           <div class="flex-row text-left w-30 mx-auto p-10 lg:pl-0">
             Titulaire d'un Bac STI2D, je suis actuellement en 2eme année de BTS SIO. Plus précisément en option SLAM (Solutions Logicielles et Applications Métiers) à l’Institut Supérieur de Saint-Denis à Annonay.
@@ -62,28 +62,32 @@
       </div>
     </section>
     <section id="stages">
-      <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20">
+      <div class="max-w-screen-lg mx-auto p-5 mt-20">
         <h2 class="text-3xl font-bold text-center mx-auto">Stage</h2>
-        <div class="grid md:grid-cols-2 p-5 gap-5 rounded-lg">
-          <div class="border border-red-500 rounded-lg">
-            <h2 class="text-xl p-3 font-bold mx-auto">Les Jardins de Brogieux</h2>
-            <img class="w-40 rounded-lg mx-auto p-3" src="@/assets/jardins_brogieux.jpeg" alt="">
+        <p class="p-5 w-auto mx-auto mt-10">Durant le BTS SIO, nous devons effectuer 2 stages en entreprise pour une durée totale de 10 semaines permettant de valider notre BTS.</p>
+        <div class="grid m-auto grid-cols-1 p-5 gap-5 rounded-lg">
+          <div class="">
+            <h2 class="text-xl p-5 font-bold mx-auto">Les Jardins de Brogieux</h2>
+            <img class="w-40 rounded-2xl mx-auto p-3" src="@/assets/jardins_brogieux.jpeg" alt="">
             <div>
-              <h3><span class="font-bold">Date:</span> juin 2021</h3>
-              <p class="p-3">Les Jardins de Brogieux est un ensemble de jardins à visiter ainsi qu'une ancienne maison forte et toutes l'histoire liés à cela</p>
+              <h3 class="mt-5 text-left"><span class="font-bold text-xl">Date:</span> <br>24 Mai au 25 Juin 2021</h3>
+              <h3 class="mt-5 text-left font-bold text-xl">Description:</h3>
+              <p class="text-left mb-10">Les Jardins de Brogieux est un ensemble de jardins à visiter ainsi qu'une ancienne maison forte et toutes l'histoire liés à cela.</p>
             </div>
-            <p class="p-3">-----</p>
-            <button class="bg-[#DA5759] w-auto p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><router-link class="bg-transparent" to="/realisation">En savoir plus</router-link></button>
+            <router-link to="/stage" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto">En savoir plus</router-link>
           </div>
-          <div class="border border-red-500 rounded-lg">
-            <h2 class="text-xl font-bold mx-auto p-3">Web At Heart</h2>
-            <img class="w-40 rounded-lg mx-auto p-3" src="@/assets/web-at-heart.png" alt="">
+          <div class="w-60 mx-auto md:w-96 lg:w-96 h-px bg-[#A0A0A0] mt-8 rounded-lg"></div>
+          <div class="">
+            <h2 class="text-xl p-5 font-bold mx-auto">Web At Heart</h2>
+            <img class="w-40 rounded-2xl mx-auto p-3" src="@/assets/web-at-heart.png" alt="">
             <div>
-              <h3><span class="font-bold">Date:</span> juin 2021</h3>
-              <p class="p-3">Web at Heart est une agence de communication Web et digitale 360° spécialisée dans le design et la création de site web sur mesure.</p>
+              <h3 class="mt-5 text-left"><span class="font-bold text-xl">Date:</span> <br>3 Janvier au 4 Février 2022</h3>
+              <h3 class="mt-5 text-left font-bold text-xl">Description:</h3>
+              <p class="text-left">Web at Heart est une agence de communication Web et digitale 360° spécialisée dans le design et la création de site web sur mesure.</p>
+              <h3 class="mt-5 text-left font-bold text-xl">Projets réalisés</h3>
+              <p class="text-left mb-10">Kathekon & Vm-Automation</p>
             </div>
-            <p class="p-3">----</p>
-            <button class="bg-[#DA5759] w-auto p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><router-link class="bg-transparent" to="/realisation">En savoir plus</router-link></button>
+            <router-link to="/projects" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto mt-10">En savoir plus</router-link>
           </div>
         </div>
       </div>
@@ -133,6 +137,7 @@ import Projects from '@/components/Projects.vue';
 import Contact from '@/components/Contact.vue';
 
 export default {
+  props: ['data'],
   components: {
     Navbar,
     Footer,

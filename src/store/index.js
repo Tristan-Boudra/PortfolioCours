@@ -98,6 +98,56 @@ export default createStore({
       },
 
     ],
+    brogieux: [
+      {
+        id: 6,
+        name: 'Les Jardins de Brogieux',
+        websiteLinks: 'https://www.les-jardins-de-brogieux.fr/',
+        description: 'Construit sur les restes d’une ferme forte du XIVème siècle, le château de Brogieux se trouve sur la commune de ROIFFIEUX en Ardèche(07).',
+        img: '',
+        title: 'Missions réalisées:',
+        link: [
+          {
+            linkName: 'SurveyMonkey',
+            link: 'https://fr.surveymonkey.com/r/NB95QCZ',
+          },
+          {
+            linkName: 'Facebook',
+            link: 'https://m.facebook.com/jardinsdebrogieux/',
+          },
+        ],
+        figmaLinks: [
+          {
+            linkName: 'Figma',
+            link: 'https://www.figma.com/file/IlDMB37HhdRwhDEbAcXcsz/CoVoit',
+          },
+        ],
+        techno: [
+          {
+            name: 'Wordpress',
+            color: '006E9F',
+          },
+          {
+            name: 'Publisher',
+            color: '077064',
+          },
+        ],
+        mission: [
+          {
+            description: 'J\'ai participé à l\'ajout et modifications de contenu en fonction des différents évènements qui se sont passés.',
+            img: '',
+          },
+          {
+            description: 'J\'ai créé à partir du site web, SurveyMonkey, un quizz. Le but de ce jeux était d\'enrichir les visites en proposant une série de questions en rapport avec la visite. Ce quizz était disponible via un QR Code qui était disposé dans différents endroits du domaine ainsi qu\'un format papier pour les personnes ne possedant pas de smartphone.',
+            img: '',
+          },
+          {
+            description: 'Dans le but de faire connaître davantage les Jardins de Brogieux, je me suis occupé a gérer leur page Facebook. Mon travailler consister à partager du contenu sur l\'avancement des différents évènements qui ont lieu mais également le partage de contenu sur l\'évolution des jardins.',
+            img: '',
+          },
+        ],
+      },
+    ],
     realisation: [
       {
         id: 0,
@@ -142,7 +192,7 @@ export default createStore({
             link: 'https://boudra-tristan.fr/',
           },
         ],
-        img: '@/assets/portfolio.png',
+        img: 'portfolio.png',
         projectOrigine: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectObjectif: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectDescription: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années. Il me permet également de présenter l\'ensemble de mes compétences acquis et de les présenter d\'une façon plus créative.',
@@ -201,7 +251,7 @@ export default createStore({
             link: 'http://covoit.erwan-decoster.com/',
           },
         ],
-        img: '@/assets/covoit.png',
+        img: 'covoit.png',
         projectPartenaire: [
           {
             name: 'Tristan',
@@ -213,7 +263,7 @@ export default createStore({
         projectDescription: 'Il s’agit d’un projet consistant à réaliser une web app de covoiturage adapté au mobile et au PC; le but: définir un point de départ et d\'arrivée et choisir les autres utilisateurs que l’on veut prendre sur notre passage ou inversement et trouver un conducteur pour aller la on l’on souhaite.',
         fonctionalitesConducteur: [
           {
-            title: 'Fonctionnalités',
+            title: 'Fonctionnalitées:',
           },
           {
             for: 'Conducteur',
@@ -295,11 +345,10 @@ export default createStore({
             link: '',
           },
         ],
-        img: '@/assets/covoit.png',
+        img: 'covoit.png',
         projectOrigine: 'Le but de mon application est un système d’administration de mon projet web. Elle permettra de faire suite aux demandes des utilisateurs pour modifier des informations personnelles.',
         projectObjectif: 'C’est de pouvoir accéder à toute une partie administration qui permet de modifier les motorisations, réinitialiser les mots de passe, informations personnelles.',
         projectDescription: 'Il s’agit d’un projet consistant à réaliser une application en C# avec l’aide de WPF, permettant de changer toutes les informations de mon application.',
-        maquetteImg: '',
         maquetteWebsite: 'Figma',
         maquetteLink: 'https://www.figma.com/file/hV8tFOXZ5o6TAeCFUg5ca2/Untitled?node-id=0%3A1',
       },
@@ -320,31 +369,31 @@ export default createStore({
         ],
         mission: [
           {
-            title: 'Missions réalisées:',
-          },
-          {
             description: 'J\'ai commencer par créer une page de blog qui leur permettait de rajouter des articles en fonction de l\'actualité.',
-            img: '@/assets/blog.png',
+            img: 'blog.png',
           },
           {
             description: 'Ensuite j\'ai mis en place un carousel permettant à Kathekon de montrer aux clients toutes les entreprises qui ont travailler avec eux.',
-            img: '@/assets/carousel_reference.png',
+            img: 'carousel_reference.png',
           },
           {
             description: 'Sur une autre page, j\'ai détailler toutes les entreprises qui ont travailler avec Kathekon avec les missions réalisées.',
-            img: '@/assets/ecole_mine.png',
+            img: 'ecole_mine.png',
           },
           {
             description: 'Création du footer où l\'on retrouve toutes les informations pour contacter les responsable de Kathekon ainsi que leur réseaux sociaux.',
-            img: '@/assets/footer.png',
+            img: 'footer.png',
           },
           {
             description: 'Finalisation des headers avec l\'achat des photos qui étaient sous licence.',
-            img: '@/assets/header.png',
+            img: 'header.png',
           },
           {
             description: 'Finalisation du site avec l\'ensemble des textes après plusieurs modifications.',
             img: '@/assets/ADN.png',
+          },
+          {
+            title: 'Missions réalisées:',
           },
         ],
         shortDesc: 'Site web pour une entreprise spécialisé dans le RSE',
@@ -355,7 +404,7 @@ export default createStore({
             link: 'https://www.projet-kathekon.com/',
           },
         ],
-        img: '@/assets/kathekon.png',
+        img: 'kathekon.png',
         projectOrigine: 'Création d’un site web pour un client spécialisé dans la démarche RSE',
         projectDescription: 'L\'entreprise Kathekon est spécialiser dans le conseil en RSE (Responsabilité Societale de l\'entreprise). De ce faite, le site est en adéquation avec les valeurs que veulent faire véhiculer les responsables de Kathekon.',
       },
@@ -376,27 +425,27 @@ export default createStore({
         ],
         mission: [
           {
-            title: 'Missions réalisées:',
-          },
-          {
             description: 'J\'ai commencer par créer des cards avec toutes les entreprises où il est déjà intervenu. C\'est card sont réaliser uniquement en HTML & CSS.',
-            img: '@/assets/vignette.png',
+            img: 'vignette.png',
           },
           {
             description: 'Création de toutes les pages pour chaque entreprise où il est intervenu, un explicatif des tâches réaliser.',
-            img: '@/assets/taches.png',
+            img: 'taches.png',
           },
           {
             description: 'Création du footer où l\'on retrouve toutes les informations de contact.',
-            img: '@/assets/footerVM.png',
+            img: 'footerVM.png',
           },
           {
             description: 'Ajout de vignette montrant l\'ensemble de ses compétences et savoir faire.',
-            img: '@/assets/vmautomation1.png',
+            img: 'vmautomation1.png',
           },
           {
             description: 'Ajout d\'un slider représentant les entreprises avec qui il a travailler.',
-            img: '@/assets/vmautomaiton2.png',
+            img: 'vmautomaiton2.png',
+          },
+          {
+            title: 'Missions réalisées:',
           },
         ],
         websiteLinks: [
@@ -407,7 +456,7 @@ export default createStore({
         ],
         shortDesc: 'Site web pour une entreprise spécialisé en instrumentation, régulation et automatisation de procédés industriels',
         website: 'https://www.vm-automation.com/',
-        img: '@/assets/vmAutomaton.png',
+        img: 'vmAutomaton.png',
         projectOrigine: 'Création d’un site web pour un client spécialisé en instrumentation, régulation et automatisation de procédés industriels',
         projectDescription: 'Le projet VM-Automation doit répondre aux différentes exigences du client notamment que le site web doit être représentatif de son activité industriel',
       },
@@ -450,7 +499,7 @@ export default createStore({
             link: '#',
           },
         ],
-        img: '@/assets/portfolioBTSSio.png',
+        img: 'portfolioBTSSio.png',
         projectOrigine: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectObjectif: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectDescription: 'Ce portfolio est une première version de ce portfolio actuelle. Après avoir progresser et appris de nouvelle compétences, j\'ai décider d\'abandonner celui-là au profit du portfolio sur lequel vous êtes actuellement.',

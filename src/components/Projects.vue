@@ -10,7 +10,7 @@
     <div class="mt-5">
       <router-link :to="{ name: 'Realisation', params: { name: data.pathName }}" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto">En savoir plus</router-link>
     </div>
-    <div class="w-96 mx-auto md:w-96 lg:w-full h-px bg-[#A0A0A0] mt-8 rounded-lg"></div>
+    <div class="w-60 mx-auto md:w-96 lg:w-96 h-px bg-[#A0A0A0] mt-8 rounded-lg"></div>
   </div>
 </template>
 

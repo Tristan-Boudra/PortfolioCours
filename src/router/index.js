@@ -3,6 +3,7 @@ import Home from '../views/Home.vue';
 import Projects from '../views/Projects.vue';
 import Realisation from '../views/Realisation.vue';
 import Veilles from '../views/Veilles.vue';
+import Stage from '../views/Stage.vue';
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/veilles',
     name: 'Veilles',
     component: Veilles,
+  },
+  {
+    path: '/stage',
+    name: 'Stage',
+    component: Stage,
   },
 ];
 
