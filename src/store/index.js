@@ -192,7 +192,7 @@ export default createStore({
             link: 'https://boudra-tristan.fr/',
           },
         ],
-        img: 'portfolio.png',
+        img: 'portfolio',
         projectOrigine: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectObjectif: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectDescription: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années. Il me permet également de présenter l\'ensemble de mes compétences acquis et de les présenter d\'une façon plus créative.',
@@ -251,7 +251,7 @@ export default createStore({
             link: 'http://covoit.erwan-decoster.com/',
           },
         ],
-        img: 'covoit.png',
+        img: 'covoit',
         projectPartenaire: [
           {
             name: 'Tristan',
@@ -345,7 +345,7 @@ export default createStore({
             link: '',
           },
         ],
-        img: 'covoit.png',
+        img: 'covoit',
         projectOrigine: 'Le but de mon application est un système d’administration de mon projet web. Elle permettra de faire suite aux demandes des utilisateurs pour modifier des informations personnelles.',
         projectObjectif: 'C’est de pouvoir accéder à toute une partie administration qui permet de modifier les motorisations, réinitialiser les mots de passe, informations personnelles.',
         projectDescription: 'Il s’agit d’un projet consistant à réaliser une application en C# avec l’aide de WPF, permettant de changer toutes les informations de mon application.',
@@ -370,27 +370,27 @@ export default createStore({
         mission: [
           {
             description: 'J\'ai commencer par créer une page de blog qui leur permettait de rajouter des articles en fonction de l\'actualité.',
-            img: 'blog.png',
+            img: 'blog',
           },
           {
             description: 'Ensuite j\'ai mis en place un carousel permettant à Kathekon de montrer aux clients toutes les entreprises qui ont travailler avec eux.',
-            img: 'carousel_reference.png',
+            img: 'carousel_reference',
           },
           {
             description: 'Sur une autre page, j\'ai détailler toutes les entreprises qui ont travailler avec Kathekon avec les missions réalisées.',
-            img: 'ecole_mine.png',
+            img: 'ecole_mine',
           },
           {
             description: 'Création du footer où l\'on retrouve toutes les informations pour contacter les responsable de Kathekon ainsi que leur réseaux sociaux.',
-            img: 'footer.png',
+            img: 'footer',
           },
           {
             description: 'Finalisation des headers avec l\'achat des photos qui étaient sous licence.',
-            img: 'header.png',
+            img: 'header',
           },
           {
             description: 'Finalisation du site avec l\'ensemble des textes après plusieurs modifications.',
-            img: '@/assets/ADN.png',
+            img: 'ADN',
           },
           {
             title: 'Missions réalisées:',
@@ -404,7 +404,7 @@ export default createStore({
             link: 'https://www.projet-kathekon.com/',
           },
         ],
-        img: 'kathekon.png',
+        img: 'kathekon',
         projectOrigine: 'Création d’un site web pour un client spécialisé dans la démarche RSE',
         projectDescription: 'L\'entreprise Kathekon est spécialiser dans le conseil en RSE (Responsabilité Societale de l\'entreprise). De ce faite, le site est en adéquation avec les valeurs que veulent faire véhiculer les responsables de Kathekon.',
       },
@@ -426,23 +426,23 @@ export default createStore({
         mission: [
           {
             description: 'J\'ai commencer par créer des cards avec toutes les entreprises où il est déjà intervenu. C\'est card sont réaliser uniquement en HTML & CSS.',
-            img: 'vignette.png',
+            img: 'vignette',
           },
           {
             description: 'Création de toutes les pages pour chaque entreprise où il est intervenu, un explicatif des tâches réaliser.',
-            img: 'taches.png',
+            img: 'taches',
           },
           {
             description: 'Création du footer où l\'on retrouve toutes les informations de contact.',
-            img: 'footerVM.png',
+            img: 'footerVM',
           },
           {
             description: 'Ajout de vignette montrant l\'ensemble de ses compétences et savoir faire.',
-            img: 'vmautomation1.png',
+            img: 'vmautomation1',
           },
           {
             description: 'Ajout d\'un slider représentant les entreprises avec qui il a travailler.',
-            img: 'vmautomaiton2.png',
+            img: 'vmautomaiton2',
           },
           {
             title: 'Missions réalisées:',
@@ -456,7 +456,7 @@ export default createStore({
         ],
         shortDesc: 'Site web pour une entreprise spécialisé en instrumentation, régulation et automatisation de procédés industriels',
         website: 'https://www.vm-automation.com/',
-        img: 'vmAutomaton.png',
+        img: 'vmAutomaton',
         projectOrigine: 'Création d’un site web pour un client spécialisé en instrumentation, régulation et automatisation de procédés industriels',
         projectDescription: 'Le projet VM-Automation doit répondre aux différentes exigences du client notamment que le site web doit être représentatif de son activité industriel',
       },
@@ -499,7 +499,7 @@ export default createStore({
             link: '#',
           },
         ],
-        img: 'portfolioBTSSio.png',
+        img: 'portfolioBTSSio',
         projectOrigine: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectObjectif: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectDescription: 'Ce portfolio est une première version de ce portfolio actuelle. Après avoir progresser et appris de nouvelle compétences, j\'ai décider d\'abandonner celui-là au profit du portfolio sur lequel vous êtes actuellement.',

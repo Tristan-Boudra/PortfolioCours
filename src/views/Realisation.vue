@@ -4,7 +4,7 @@
     <section class="max-w-screen-lg mx-auto mt-20">
       <div class="max-w-screen-lg mx-auto px-3 grid gap-6">
         <h1 class="text-3xl font-bold text-center mx-auto">{{ this.realisation.name }}</h1>
-        <!-- <img class="mx-auto rounded-lg mb-5" :src="require(`@/assets/${ this.realisation.img }`)" alt=""> -->
+        <img class="mx-auto rounded-lg mb-5" v-if="this.realisation.img" :src="require(`@/assets/${ this.realisation.img }.png`)" alt="">
         <div class="flex flex-col" >
           <h2 class="text-left text-xl font-bold">Technologies utilisées:</h2>
           <ul class="flex gap-2 flex-wrap p-3">
@@ -17,10 +17,10 @@
         </div>
         <!-- Pour Kathekon et Vm-Automation -->
         <div class="gap-16">
-          <h2 class="text-left text-xl font-bold"  v-for="tech in this.realisation.mission" v-bind:key="tech">{{ tech.title }}</h2>
-          <ul class="grid lg:grid-cols-2 md:grid-cols-2 gap-5 py-10">
-            <li class="py-1 text-left p-5" v-for="tech in this.realisation.mission" v-bind:key="tech">{{ tech.description }}
-              <img class="mx-auto w-auto mb-0 rounded-lg mb-0" src="" alt="">
+          <h2 class="text-left text-xl font-bold" v-for="tech in this.realisation.mission" v-bind:key="tech">{{ tech.title }}</h2>
+          <ul class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 py-10">
+            <li class="py-1 text-center text-lg p-5 mt-20" v-for="tech in this.realisation.mission" v-bind:key="tech">{{ tech.description }}
+              <img class="mx-auto w-auto mt-10 rounded-lg" v-if="tech.img" :src="require(`@/assets/${ tech.img }.png`)" alt="">
             </li>
           </ul>
         </div>
