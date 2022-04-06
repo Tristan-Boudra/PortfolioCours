@@ -101,7 +101,7 @@
           </div>
         </div>
         <div>
-          <router-link to="/projects" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto">Voir plus</router-link>
+          <router-link to="/projects" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto">En voir plus</router-link>
         </div>
       </div>
     </section>

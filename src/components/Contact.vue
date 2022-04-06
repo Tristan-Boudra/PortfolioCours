@@ -53,12 +53,10 @@ export default {
   },
   methods: {
     checkForm() {
-      console.log('in checkForm');
       if (this.name && this.surname && this.email && this.validEmail(this.email) && this.object && this.message && !(this.message.length <= 20) && !this.messageSend) {
         this.errors = [];
         return true;
       }
-      console.log(this.messageSend);
       this.errors = [];
       if (this.messageSend) {
         this.errors.push('Le message a déjà été envoyé attendais quelques secondes.');
@@ -95,23 +93,19 @@ export default {
       this.sendEmail();
     },
     sendEmail() {
-      console.log('in sendemail');
       smtp.send({
         SecureToken: 'a7c56475-4da5-4cfc-828a-c0aa64446c92',
         To: 'boudratristan@gmail.com',
         From: 'boudratristan@gmail.com',
         Subject: 'Formulaire portfolio',
-        Body: `<html><h2>${this.name} ${this.surname} </h2><p style="font-size: 14px; margin: 0;"><strong>Email : ${this.email}</strong></p><p style="font-size: 14px; margin: 0;"><strong>Object : ${this.object}</strong></p><br></br><pre style="font-size: 14px;  margin: 0;"><strong>message : </strong><br>${this.message}</pre></html>`,
+        Body: `<html><h2>${this.name} ${this.surname}</h2><p style="font-size: 14px; margin: 0;"><strong>Email : ${this.email}</strong></p><p style="font-size: 14px; margin: 0;"><strong>Object : ${this.object}</strong></p><br></br><pre style="font-size: 14px;  margin: 0;"><strong>message : </strong><br>${this.message}</pre></html>`,
       }).then(
         (message) => this.verifEmailSending(message),
       );
     },
     verifEmailSending(message) {
-      console.log('in verifEmailSending');
-      console.log(message);
       if (message === 'OK') {
         this.messageSend = true;
-        console.log('is send');
         localStorage.name = '';
         localStorage.surname = '';
         localStorage.email = '';
@@ -121,7 +115,6 @@ export default {
         setTimeout(() => {
           this.messageSend = false;
           this.errors = [];
-          console.log(this.messageSend);
         }, 10000);
       } else {
         this.errors.push('Une erreur durant l\'envoi est survenue, réessayé !');
