@@ -53,47 +53,57 @@ export default createStore({
         ],
       },
     ],
+    liens: [
+      {
+        name: 'CV',
+        link: 'cv',
+      },
+      {
+        name: 'Certification ANSSI',
+        link: '',
+      },
+    ],
     veilles: [
       {
         id: '0',
         name: 'Twitch',
         description: 'Une importante fuite de données à eu lieu le mercredi 6 octobre.Elle contiendrait notemment le code source des différentes applications de streaming développées par Twitch, plusieurs outils internes tels que des kits de développement logiciel, des projets internes ainsi que des outils de l’équipe de sécurité de Twitch.Les données diffusées contiennent également des informations concernant les paiements reçuent par certains des streamers les plus importants de la plateforme sur leurs chaînes depuis 2019.',
-        img: '',
+        img: 'twitch',
         link: 'https://www.lesechos.fr/tech-medias/hightech/twitch-victime-dune-fuite-de-donnees-les-gros-revenus-des-createurs-reveles-1352634',
       },
       {
         id: '1',
         name: 'App Tracking Transparency',
         description: 'Depuis Avril 2021, Apple a lancer l\'App Tracking Transperency (ATT). Cela oblige les applications qui utilise le système iOS 14.5, d\'être plus transparents envers les utilisateurs en ce qui concerne leurs données personnelles. Ceci a pour concéquences que les utilisateurs peuvent refuser le tracking des applications pour éviter les publicités ciblées.',
-        img: '',
+        img: 'apple',
         link: 'https://www.tomsguide.fr/apple-lapp-tracking-transparency-a-coute-pres-de-10-milliards-de-dollars-aux-reseaux-sociaux/',
       },
       {
         id: '2',
         name: 'Droit à l\'accès d\'internet',
         description: 'La Constitution française devrait-elle être actualisée pour y inscrire un droit d’accès à Internet ? Des parlementaires emmenés par la députée non inscrite Paula Forteza ont lancé une initiative législative en ce sens, avec le dépôt, le 10 novembre, d’une proposition de loi constitutionnelle composée de huit articles. L’un d’eux vise à consacrer un droit constitutionnel au réseau des réseaux.',
-        img: '',
+        img: 'contitution',
         link: 'https://www.numerama.com/politique/755454-et-si-le-droit-a-lacces-a-internet-etait-inscrit-dans-la-constitution-francaise.html#utm_medium=distibuted&utm_source=feedly&utm_campaign=755454',
       },
       {
         id: '3',
         name: 'Instagram',
         description: 'Instagram demande à certains utilisateurs de faire un selfie vidéo pour vérifier qu’ils soient bien humains. Le réseau social ne fait pas encore cette vérification pour tout le monde, mais il semblerait qu’il soit en train de la tester.',
-        img: '',
+        img: 'instagram',
         link: 'https://www.tomsguide.fr/instagram-pourrait-vous-demander-de-faire-un-selfie-video-pour-verifier-que-vous-etes-humain/',
       },
       {
         id: '4',
         name: 'Les cookies',
         description: 'Le respect de la vie privée des internautes est au centre de ces changements. Cependant, les pratiques marketing mises en place depuis des années en sont lourdement impactées. Dès lors, quel est l’impact de ces nouvelles règles sur la publicité programmatique et comment s’y préparer ?',
-        img: '',
+        img: 'cookie',
         link: 'https://www.webdigitales.be/blog/publicite-programmatique-avenir-sans-cookies',
       },
       {
         id: '5',
         name: 'La CNIL & Google Analytics',
         description: 'Google Analytics permet de disposer de statistiques de fréquentation d’un site web. Saisie de plaintes par l’association NOYB, la CNIL, en coopération avec ses homologues européens, a analysé les conditions dans lesquelles les données collectées grâce à cet outil sont transférées vers les États-Unis. La CNIL estime que ces transferts sont illégaux et impose à un gestionnaire du site web français de se conformer au RGPD',
-        img: '',
+        img: 'cnil',
         link: 'https://www.cnil.fr/fr/utilisation-de-google-analytics-et-transferts-de-donnees-vers-les-etats-unis-la-cnil-met-en-demeure',
       },
 
@@ -104,7 +114,7 @@ export default createStore({
         name: 'Les Jardins de Brogieux',
         websiteLinks: 'https://www.les-jardins-de-brogieux.fr/',
         description: 'Construit sur les restes d’une ferme forte du XIVème siècle, le château de Brogieux se trouve sur la commune de ROIFFIEUX en Ardèche(07).',
-        img: '',
+        img: 'brogieux',
         title: 'Missions réalisées:',
         link: [
           {
@@ -114,12 +124,6 @@ export default createStore({
           {
             linkName: 'Facebook',
             link: 'https://m.facebook.com/jardinsdebrogieux/',
-          },
-        ],
-        figmaLinks: [
-          {
-            linkName: 'Figma',
-            link: 'https://www.figma.com/file/IlDMB37HhdRwhDEbAcXcsz/CoVoit',
           },
         ],
         techno: [
@@ -135,15 +139,15 @@ export default createStore({
         mission: [
           {
             description: 'J\'ai participé à l\'ajout et modifications de contenu en fonction des différents évènements qui se sont passés.',
-            img: '',
+            img: 'flyer',
           },
           {
             description: 'J\'ai créé à partir du site web, SurveyMonkey, un quizz. Le but de ce jeux était d\'enrichir les visites en proposant une série de questions en rapport avec la visite. Ce quizz était disponible via un QR Code qui était disposé dans différents endroits du domaine ainsi qu\'un format papier pour les personnes ne possedant pas de smartphone.',
-            img: '',
+            img: 'quiz',
           },
           {
             description: 'Dans le but de faire connaître davantage les Jardins de Brogieux, je me suis occupé a gérer leur page Facebook. Mon travailler consister à partager du contenu sur l\'avancement des différents évènements qui ont lieu mais également le partage de contenu sur l\'évolution des jardins.',
-            img: '',
+            img: 'facebook',
           },
         ],
       },

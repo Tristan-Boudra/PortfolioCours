@@ -41,7 +41,7 @@
           </div>
           <div class="flex flex-row gap-8 justify-center">
             <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="">CV</a></button>
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/CV.pdf" download="">Certification ANSSI</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/cv.pdf">Certification ANSSI</a></button>
           </div>
           </div>
         </div>
@@ -114,7 +114,7 @@
           Faire une veille est très important car il est necessaire d'être à l'affût des dernières nouveautées, et l'informatique étant un domaine qui évolue sans cesse. Cela permet de ne pas avoir des outils obsolètes<br>
           Pour ma veille technologique, j'ai utilisé l'application web Feedly, qui permet d'avoir une veille en fonction d'un sujet ou des sites web que l'on suit.<br><br>
           Pour ma part je suis différents site web et blog: Frandroid, Toms Guide, Numerama, Clubic, 01Net.<br>
-          J'utilise également beaucoup un iste web du nom de Hebdoo qui permet de faire un résumer de la semaine sur le domaine des nouvelles technologies.<br>
+          J'utilise également un site web du nom de Hebdoo qui permet de faire un résumer de la semaine sur le domaine des nouvelles technologies.<br>
           Mon sujet de veille technologique est la suivante:</p>
           <span class="text-2xl text-[#DA5759] font-bold mx-auto">L'analyse et le traitement des données à caractère personnel.</span>
           <router-link to="/veilles" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-auto h-auto tracking-widest mx-auto">Voir ma veille</router-link>
