@@ -3,7 +3,7 @@
     <Navbar/>
     <!-- Pour faire une section carré -->
     <section class="max-w-screen-lg mx-auto">
-      <div class="mt-20 w-full grid md:grid-cols-2">
+      <div class="mt-20 w-full grid md:grid-cols-2 p-5">
         <div class="flex-col">
           <div class="gap-4 text-[#FFFFFF] mt-20 mx-auto p-10 sm:pl-0">
             <div class="w-full text-7xl pb-10 font-black md:text-left">Boudra<br>Tristan</div>
@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="flex-col md:order-0">
-          <img class="mx-auto rounded-3xl mt-24 w-48 md:w-34 lg:w-96" src="@/assets/Tristan.png" alt="Image de profile">
+          <img class="m-auto rounded-3xl mt-24 w-56 md:w-72 lg:w-96" src="@/assets/Tristan.png" alt="Image de profile">
         </div>
       </div>
       <div class="flex text-[#FFFFFF] gap-4 mt-28 flex-col md:flex-row">
@@ -40,8 +40,8 @@
             </div>
           </div>
           <div class="flex flex-row gap-8 justify-center">
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="">CV</a></button>
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="@/assets/cv.pdf">Certification ANSSI</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" :href="pdfLink" download="cv.pdf">CV</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" rel="icon" href="cv.pdf">Certification ANSSI</a></button>
           </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
         <div class="grid m-auto grid-cols-1 p-5 gap-5 rounded-lg">
           <div class="">
             <h2 class="text-xl p-5 font-bold mx-auto">Les Jardins de Brogieux</h2>
-            <img class="w-40 rounded-2xl mx-auto p-3" src="@/assets/jardins_brogieux.jpeg" alt="">
+            <img class="w-40 rounded-2xl mx-auto p-3" src="@/assets/jardins_brogieux.jpeg" alt="image du chateau de Brogieux">
             <div>
               <h3 class="mt-5 text-left"><span class="font-bold text-xl">Date:</span> <br>24 Mai au 25 Juin 2021</h3>
               <h3 class="mt-5 text-left font-bold text-xl">Description:</h3>
@@ -79,7 +79,7 @@
           <div class="w-60 mx-auto md:w-96 lg:w-96 h-px bg-[#A0A0A0] mt-8 rounded-lg"></div>
           <div class="">
             <h2 class="text-xl p-5 font-bold mx-auto">Web At Heart</h2>
-            <img class="w-40 rounded-2xl mx-auto p-3" src="@/assets/web-at-heart.png" alt="">
+            <img class="w-40 rounded-2xl mx-auto p-3" src="@/assets/web-at-heart.png" alt="Image de Web At Heart">
             <div>
               <h3 class="mt-5 text-left"><span class="font-bold text-xl">Date:</span> <br>3 Janvier au 4 Février 2022</h3>
               <h3 class="mt-5 text-left font-bold text-xl">Description:</h3>

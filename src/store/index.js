@@ -8,31 +8,34 @@ export default createStore({
         techno: [
           {
             name: 'HTML',
-            color: 'DD4B25',
+            color: '9f3519',
+            // color: 'DD4B25',
           },
           {
             name: 'CSS',
-            color: '254BDD',
+            color: '2147d7',
           },
           {
             name: 'JavaScript',
-            color: 'EBD41C',
+            color: '6b5700',
+            // color: 'EBD41C',
           },
           {
             name: 'PHP',
-            color: '787CB4',
+            color: '434aa1',
           },
           {
             name: 'MySql',
-            color: 'E48E00',
+            color: '775113',
+            // color: 'E48E00',
           },
           {
             name: 'TailwindCSS',
-            color: '38BDF8',
+            color: '005f89',
           },
           {
             name: 'VueJs',
-            color: '3EAF7C',
+            color: '27642e',
           },
           {
             name: 'C#',
@@ -40,7 +43,7 @@ export default createStore({
           },
           {
             name: 'Wordpress',
-            color: '006E9F',
+            color: '265f79',
           },
           {
             name: 'Oxygen',
@@ -48,7 +51,7 @@ export default createStore({
           },
           {
             name: 'WooCommerce',
-            color: '7F54B3',
+            color: '6c459c',
           },
         ],
       },

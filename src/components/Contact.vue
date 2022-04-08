@@ -12,23 +12,23 @@
         </div>
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Nom:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="name">Nom:</label>
         <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80"  type="text" id="name" name="name" autocomplete="name" v-model="name">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Prénom:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="surname">Prénom:</label>
         <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="surname" name="surname" autocomplete="surname" v-model="surname">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Objet:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="object">Objet:</label>
         <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="object" name="object" autocomplete="objet" v-model="object">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Mail:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="email">Mail:</label>
         <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="email" name="email" autocomplete="email" v-model="email">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#DA5759] text-left p-2 text-lg font-bold" for="">Message:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="message">Message:</label>
         <textarea class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" name="message" id="message" cols="40" rows="10" v-model="message"></textarea>
       </div>
       <input class="md:col-span-2 mx-auto cursor-pointer mt-5 px-5 py-2 bg-[#DA5759] transition duration-200 text-[#000000] font-bold rounded-xl flex items-center w-fit" value="Envoyer" type="submit" name="" id="">

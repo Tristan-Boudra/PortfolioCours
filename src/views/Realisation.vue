@@ -4,7 +4,7 @@
     <section class="max-w-screen-lg mx-auto mt-20">
       <div class="max-w-screen-lg mx-auto px-3 grid gap-6">
         <h1 class="text-3xl font-bold text-center mx-auto">{{ this.realisation.name }}</h1>
-        <img class="mx-auto rounded-lg mb-5" v-if="this.realisation.img" :src="require(`@/assets/${ this.realisation.img }.png`)" alt="">
+        <img class="mx-auto rounded-lg mb-5" v-if="this.realisation.img" :src="require(`@/assets/${ this.realisation.img }.png`)" alt="images des mes réalisations">
         <div class="flex flex-col" >
           <h2 class="text-left text-xl font-bold">Technologies utilisées:</h2>
           <ul class="flex gap-2 flex-wrap p-3">
@@ -20,7 +20,7 @@
           <h2 class="text-left text-xl font-bold" v-for="tech in this.realisation.mission" v-bind:key="tech">{{ tech.title }}</h2>
           <ul class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 py-10">
             <li class="py-1 text-center text-lg p-5 mt-20" v-for="tech in this.realisation.mission" v-bind:key="tech">{{ tech.description }}
-              <img class="mx-auto w-auto mt-10 rounded-lg" v-if="tech.img" :src="require(`@/assets/${ tech.img }.png`)" alt="">
+              <img class="mx-auto w-auto mt-10 rounded-lg" v-if="tech.img" :src="require(`@/assets/${ tech.img }.png`)" alt="images de mes missions">
             </li>
           </ul>
         </div>

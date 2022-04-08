@@ -36,6 +36,20 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior(savedPosition) {
+    return savedPosition || { top: 0 };
+  },
+});
+
+router.afterEach(() => {
+  // if (to.params.name) {
+  //   document.title = 'Boudra Tristan';
+  // } else if (to.meta && to.meta.title) {
+  //   document.title = to.meta.title;
+  // } else {
+  //   document.title = 'Boudra Tristan';
+  // }
+  document.title = 'Boudra Tristan';
 });
 
 export default router;

@@ -4,7 +4,7 @@
     <section class="max-w-screen-lg mx-auto mt-20">
       <div class="max-w-screen-lg mx-auto px-3 grid gap-6">
         <h1 class="text-3xl font-bold text-center mx-auto">{{ this.brogieux.name }}</h1>
-        <img class="mx-auto rounded-lg mb-5" v-if="this.brogieux.img" :src="require(`@/assets/${this.brogieux.img}.png`)" alt="">
+        <img class="mx-auto rounded-lg mb-5" v-if="this.brogieux.img" :src="require(`@/assets/${this.brogieux.img}.png`)" alt="Images du chateau de Brogieux">
         <div>
           <h2 class="text-left text-xl font-bold mt-20">Description du site:</h2>
           <p class="text-left">{{ brogieux.description }}</p>
@@ -19,7 +19,7 @@
           <h2 class="text-left text-xl font-bold">{{ this.brogieux.title }}</h2>
           <ul class="grid lg:grid-cols-1 md:grid-cols-1 gap-5 w-auto mx-auto p-5">
             <li class="p-10 text-left" v-for="tech in this.brogieux.mission" v-bind:key="tech">{{ tech.description }}
-              <img class="mx-auto w-auto mb-0 rounded-lg mt-5" v-if="tech.img" :src="require(`@/assets/${ tech.img }.png`)" alt="">
+              <img class="mx-auto w-auto mb-0 rounded-lg mt-5" v-if="tech.img" :src="require(`@/assets/${ tech.img }.png`)" alt="Images des missions réalisés">
               <div class="w-48 mx-auto h-px bg-[#A0A0A0] mt-8 rounded-lg"></div>
             </li>
           </ul>

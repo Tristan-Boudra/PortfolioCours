@@ -4,11 +4,11 @@
       <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center md:h-max">
         <div class="flex items-center justify-between">
           <router-link to="/" class="">
-            <img src="@/assets/Tristan.svg" class="px-4 py-1">
+            <img src="@/assets/Tristan.svg" class="px-4 py-1" alt="logo">
           </router-link>
           <!-- Mobile menu button -->
           <div @click="showMenu = !showMenu" class="flex md:hidden">
-            <button type="button" class="text-[#DA5759]">
+            <button type="button" name="hamburger" class="text-[#FFFFFF]">
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path></svg>
             </button>
           </div>
