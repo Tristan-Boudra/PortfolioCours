@@ -4,7 +4,7 @@
       <div class="md:col-span-2 grid gap-2">
         <div v-show="errors.length">
           <ul class="grid gap-2">
-            <li v-for="error in errors" v-bind:key="error" class="bg-red-500 px-2 py-1 rounded duration-200">{{ error }}</li>
+            <li v-for="error in errors" v-bind:key="error" class="bg-[#DA5759] text-[#000000] w-72 md:w-96 mx-auto font-bold p-2 px-2 py-1 rounded duration-200">{{ error }}</li>
           </ul>
         </div>
         <div v-if="messageSend">
@@ -12,24 +12,28 @@
         </div>
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="name">Nom:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="name">Nom: <span class="text-[#DA5759]">*</span></label>
         <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80"  type="text" id="name" name="name" autocomplete="name" v-model="name">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="surname">Prénom:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="surname">Prénom: <span class="text-[#DA5759]">*</span></label>
         <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="surname" name="surname" autocomplete="surname" v-model="surname">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="object">Objet:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="object">Objet: <span class="text-[#DA5759]">*</span></label>
         <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="object" name="object" autocomplete="objet" v-model="object">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="email">Mail:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="email">Mail: <span class="text-[#DA5759]">*</span></label>
         <input class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="email" name="email" autocomplete="email" v-model="email">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="message">Message:</label>
+        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold" for="message">Message: <span class="text-[#DA5759]">*</span></label>
         <textarea class="px-2 py-1 border-2 rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" name="message" id="message" cols="40" rows="10" v-model="message"></textarea>
+      </div>
+      <div></div>
+      <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto mt-10">
+        <p class="italic my-auto">Tous les champs comportant: <span class="text-[#DA5759]">*</span> sont obligatoire</p>
       </div>
       <input class="md:col-span-2 mx-auto cursor-pointer mt-5 px-5 py-2 bg-[#DA5759] transition duration-200 text-[#000000] font-bold rounded-xl flex items-center w-fit" value="Envoyer" type="submit" name="" id="">
     </form>

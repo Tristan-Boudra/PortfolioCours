@@ -9,7 +9,6 @@ export default createStore({
           {
             name: 'HTML',
             color: '9f3519',
-            // color: 'DD4B25',
           },
           {
             name: 'CSS',
@@ -18,7 +17,6 @@ export default createStore({
           {
             name: 'JavaScript',
             color: '6b5700',
-            // color: 'EBD41C',
           },
           {
             name: 'PHP',
@@ -27,7 +25,6 @@ export default createStore({
           {
             name: 'MySql',
             color: '775113',
-            // color: 'E48E00',
           },
           {
             name: 'TailwindCSS',
@@ -54,16 +51,6 @@ export default createStore({
             color: '6c459c',
           },
         ],
-      },
-    ],
-    liens: [
-      {
-        name: 'CV',
-        link: 'cv',
-      },
-      {
-        name: 'Certification ANSSI',
-        link: '',
       },
     ],
     veilles: [
@@ -164,19 +151,19 @@ export default createStore({
         techno: [
           {
             name: 'VueJs',
-            color: '3EAF7C',
+            color: '27642e',
           },
           {
             name: 'TailwindCSS',
-            color: '38BDF8',
+            color: '005f89',
           },
           {
             name: 'JavaScript',
-            color: 'EBD41C',
+            color: '6b5700',
           },
           {
             name: 'HTML',
-            color: 'DD4B25',
+            color: '9f3519',
           },
         ],
         shortDesc: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années. ',
@@ -199,7 +186,7 @@ export default createStore({
             link: 'https://boudra-tristan.fr/',
           },
         ],
-        img: 'portfolio',
+        img: 'home',
         projectOrigine: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectObjectif: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
         projectDescription: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années. Il me permet également de présenter l\'ensemble de mes compétences acquis et de les présenter d\'une façon plus créative.',
@@ -212,27 +199,27 @@ export default createStore({
         techno: [
           {
             name: 'HTML',
-            color: 'DD4B25',
+            color: '9f3519',
           },
           {
             name: 'VueJs',
-            color: '3EAF7C',
+            color: '27642e',
           },
           {
             name: 'tailwindcss',
-            color: '39BDF8',
+            color: '005f89',
           },
           {
             name: 'PHP',
-            color: '787CB4',
+            color: '434aa1',
           },
           {
             name: 'MySql',
-            color: 'E48E00',
+            color: '775113',
           },
           {
             name: 'JavaScript',
-            color: 'EBD41C',
+            color: '6b5700',
           },
         ],
         shortDesc: 'Application de covoiturage permettant de créer ou de rejoindre un voyage.',
@@ -259,12 +246,6 @@ export default createStore({
           },
         ],
         img: 'covoit',
-        projectPartenaire: [
-          {
-            name: 'Tristan',
-            link: 'https://boudra-tristan.fr/',
-          },
-        ],
         projectOrigine: 'Après avoir réfléchi sur ce que l’on voulait faire, nous avons opté de partir sur la création d’une application déjà existante qui est Blablacar. Notre application a pour but d’être gratuite pour tous les utilisateurs. Ceci a pour effet de toucher une plus grande partie de la population en optant pour ce modèle économique.',
         projectObjectif: 'Créer une application ayant une excellente accessibilité pour toutes les tranches d’âge de la population. Créer des fonctionnalités et une interface ergonomique. Avoir une application simple d’utilisation.',
         projectDescription: 'Il s’agit d’un projet consistant à réaliser une web app de covoiturage adapté au mobile et au PC; le but: définir un point de départ et d\'arrivée et choisir les autres utilisateurs que l’on veut prendre sur notre passage ou inversement et trouver un conducteur pour aller la on l’on souhaite.',
@@ -329,7 +310,7 @@ export default createStore({
           },
           {
             name: 'MySql',
-            color: 'E48E00',
+            color: '775113',
           },
         ],
         shortDesc: 'Partie administration de l\'application Covoit permettant de modifier, supprimer, ajouter un utilisateur, voyage, véhicules.',
@@ -357,7 +338,6 @@ export default createStore({
         projectObjectif: 'C’est de pouvoir accéder à toute une partie administration qui permet de modifier les motorisations, réinitialiser les mots de passe, informations personnelles.',
         projectDescription: 'Il s’agit d’un projet consistant à réaliser une application en C# avec l’aide de WPF, permettant de changer toutes les informations de mon application.',
         maquetteWebsite: 'Figma',
-        maquetteLink: 'https://www.figma.com/file/hV8tFOXZ5o6TAeCFUg5ca2/Untitled?node-id=0%3A1',
       },
       {
         id: 3,
@@ -367,7 +347,7 @@ export default createStore({
         techno: [
           {
             name: 'Wordpress',
-            color: '006E9F',
+            color: '265f79',
           },
           {
             name: 'Oxygen',
@@ -423,7 +403,7 @@ export default createStore({
         techno: [
           {
             name: 'Wordpress',
-            color: '006E9F',
+            color: '265f79',
           },
           {
             name: 'Oxygen',
@@ -475,15 +455,15 @@ export default createStore({
         techno: [
           {
             name: 'HTML',
-            color: 'DD4B25',
+            color: '9f3519',
           },
           {
             name: 'CSS',
-            color: '254BDD',
+            color: '2147d7',
           },
           {
             name: 'JavaScript',
-            color: 'EBD41C',
+            color: '6b5700',
           },
         ],
         shortDesc: 'Portfolio réalisé durant la 2ème année de BTS SIO permettant de présenté se que j’ai fais durant mes 2 années',
@@ -492,18 +472,6 @@ export default createStore({
           {
             linkName: 'Github',
             link: 'https://github.com/Tristan-Boudra/Portfolio-BTS-SIO',
-          },
-        ],
-        figmaLinks: [
-          {
-            linkName: 'Figma',
-            link: 'https://www.figma.com/file/HNjXAxTcOt5VWuJ5YGmR1e/Website?node-id=0%3A1',
-          },
-        ],
-        websiteLinks: [
-          {
-            linkName: 'Website',
-            link: '#',
           },
         ],
         img: 'portfolioBTSSio',

@@ -40,8 +40,8 @@
             </div>
           </div>
           <div class="flex flex-row gap-8 justify-center">
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" :href="pdfLink" download="cv.pdf">CV</a></button>
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" rel="icon" href="cv.pdf">Certification ANSSI</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="https://drive.google.com/file/d/151z0244uVcom2IMUbPoCCzEb3agWTZ0d/view?usp=sharing">CV</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="https://drive.google.com/file/d/12RtRuOnJ5w7l79yvw6A8hg6HN1v-N36I/view?usp=sharing">Certification ANSSI</a></button>
           </div>
           </div>
         </div>
