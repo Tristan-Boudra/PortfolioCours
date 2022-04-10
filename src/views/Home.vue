@@ -3,9 +3,9 @@
     <Navbar/>
     <!-- Pour faire une section carré -->
     <section class="max-w-screen-lg mx-auto">
-      <div class="mt-20 w-full grid md:grid-cols-2 p-5">
+      <div class=" mt-20 md:mt-10 w-full grid md:grid-cols-2 p-5">
         <div class="flex-col">
-          <div class="gap-4 text-[#FFFFFF] mt-20 mx-auto p-10 sm:pl-0">
+          <div class="gap-4 text-[#FFFFFF] mx-auto p-10 sm:pl-0">
             <div class="w-full text-7xl pb-10 font-black md:text-left">Boudra<br>Tristan</div>
             <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en BTS SIO spécialisé dans le développement web.</div>
             <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start">
@@ -40,8 +40,8 @@
             </div>
           </div>
           <div class="flex flex-row gap-8 justify-center">
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="https://drive.google.com/file/d/151z0244uVcom2IMUbPoCCzEb3agWTZ0d/view?usp=sharing">CV</a></button>
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="https://drive.google.com/file/d/12RtRuOnJ5w7l79yvw6A8hg6HN1v-N36I/view?usp=sharing">Certification ANSSI</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="/files/cv.pdf" download="cv.pdf">CV</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="/files/Certification_Anssi.pdf" download="Certification_Anssi.pdf">Certification ANSSI</a></button>
           </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
               <h3 class="mt-5 text-left"><span class="font-bold text-xl">Date:</span> <br>3 Janvier au 4 Février 2022</h3>
               <h3 class="mt-5 text-left font-bold text-xl">Description:</h3>
               <p class="text-left">Web at Heart est une agence de communication Web et digitale 360° spécialisée dans le design et la création de site web sur mesure.</p>
-              <h3 class="mt-5 text-left font-bold text-xl">Projets réalisés</h3>
+              <h3 class="mt-5 text-left font-bold text-xl">Projets réalisés:</h3>
               <p class="text-left mb-10">Kathekon & Vm-Automation</p>
             </div>
             <router-link to="/projects" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto mt-10">En savoir plus</router-link>
