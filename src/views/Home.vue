@@ -3,9 +3,9 @@
     <Navbar/>
     <!-- Pour faire une section carré -->
     <section class="max-w-screen-lg mx-auto">
-      <div class=" mt-20 md:mt-10 w-full grid md:grid-cols-2 p-5">
-        <div class="flex-col">
-          <div class="gap-4 text-[#FFFFFF] mx-auto p-10 sm:pl-0">
+      <div class=" mt-20 md:mt-10 w-full grid md:grid-cols-2 p-5 md:p-10">
+        <div class="flex-col pt-10">
+          <div class="gap-4 text-[#FFFFFF] mx-auto p-1 sm:pl-0">
             <div class="w-full text-7xl pb-10 font-black md:text-left">Boudra<br>Tristan</div>
             <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en BTS SIO spécialisé dans le développement web.</div>
             <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start">
@@ -16,11 +16,11 @@
             </div>
           </div>
         </div>
-        <div class="flex-col md:order-0">
+        <div class="flex-col md:order-0 pt-28">
           <img class="m-auto rounded-3xl mt-24 w-56 md:w-72 lg:w-96" src="@/assets/Tristan.png" alt="Image de profile">
         </div>
       </div>
-      <div class="flex text-[#FFFFFF] gap-4 mt-28 flex-col md:flex-row">
+      <div class="flex text-[#FFFFFF] gap-4 mt-28 flex-col md:flex-row md:p-5">
         <div class="flex flex-col">
           <div class="flex-row text-left w-30 mx-auto p-10 lg:pl-0">
             Titulaire d'un Bac STI2D, je suis actuellement en 2eme année de BTS SIO. Plus précisément en option SLAM (Solutions Logicielles et Applications Métiers) à l’Institut Supérieur de Saint-Denis à Annonay.
@@ -48,7 +48,7 @@
       </div>
     </section>
     <section id="bts">
-      <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20">
+      <div class="max-w-screen-lg mx-auto p-10 mt-20">
         <h2 class="text-3xl font-bold text-center mx-auto">BTS SIO - SLAM</h2>
         <div class="text-left p-3">
           <p class="mt-5">Le BTS Services informatique aux Organisations est un diplôme reconnu par l’état de niveau Bac+2. Il remplace depuis septembre 2011 l’ancien BTS informatique de Gestion (BTS IG). En effet, cette nouvelle formule répond aux attentes de la profession en matière de qualification. Le programme a évolué en fonction de la place et du rôle des TIC (Technologies d’Information Communication) et propose deux spécialités bien distinctes : le BTS SIO SISR et le BTS SIO SLAM.</p>
@@ -106,7 +106,7 @@
       </div>
     </section>
     <section id="veilles">
-      <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
+      <div class="max-w-screen-lg mx-auto p-10 grid gap-12">
         <h2 class="text-3xl font-bold text-center mx-auto">Veilles</h2>
         <p class="text-left p-6">Une veille est une activité consistant à s'informer sur les dernières avancées et informations d'un secteur donné.<br>
           Durant ce BTS SIO, nous avons dû mettre en place une veille technologique :<br>
