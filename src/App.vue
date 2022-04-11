@@ -6,9 +6,7 @@
 html {
   overflow-x: hidden;
 }
-*{
-  background-color: #333333;
-}
+
 #app {
   font-family: Nunito, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

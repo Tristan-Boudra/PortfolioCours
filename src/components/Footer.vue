@@ -12,7 +12,7 @@
           <li><a href="https://twitter.com/TristanBoudra"><img class="w-14 flex" src="@/assets/Twitter.png" alt="Twitter"></a></li>
         </ul>
       </div>
-      <p>© Boudra Tristan | Tous droits réservés</p>
+      <p class="text-[#333333]">© Boudra Tristan | Tous droits réservés</p>
     </footer>
   </div>
 </template>

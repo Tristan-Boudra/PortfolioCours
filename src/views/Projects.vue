@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full dark:bg-[#333333]">
     <Navbar/>
     <section class="max-w-screen-lg mx-auto">
       <div class="max-w-screen-lg mx-auto px-3 py-20 grid gap-12">

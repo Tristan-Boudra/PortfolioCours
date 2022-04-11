@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full">
+  <div class="w-full dark:bg-red-200">
     <!-- Pour faire une section carré -->
-    <section class="max-w-screen-lg mx-auto p-6">
-        <div class="flex flex-col mt-10 rounded-lg p-3 h-auto">
+    <section class="max-w-screen-lg mx-auto p-6 dark:bg-[#333333]">
+        <div class="flex flex-col mt-10 rounded-lg p-3 h-auto text-[#333333] dark:text-[#FFFFFF]">
           <h2 class="text-center text-2xl font-bold">{{ data.name }}</h2>
           <ul class="gap-5 py-10">
             <img class="mx-auto w-96 rounded-lg mb-5" v-if="this.data.img" :src="require(`@/assets/${ data.img }.png`)" alt="image veilles">

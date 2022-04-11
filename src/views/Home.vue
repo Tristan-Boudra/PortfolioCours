@@ -1,16 +1,16 @@
 <template>
-  <div class="w-full">
+  <div class="w-full dark:bg-[#333333]">
     <Navbar/>
     <!-- Pour faire une section carré -->
-    <section class="max-w-screen-lg mx-auto">
+    <section class="max-w-screen-lg mx-auto bg-white dark:bg-[#333333]">
       <div class=" mt-20 md:mt-10 w-full grid md:grid-cols-2 p-5 md:p-10">
         <div class="flex-col pt-10">
-          <div class="gap-4 text-[#FFFFFF] mx-auto p-1 sm:pl-0">
+          <div class="gap-4 mx-auto p-1 sm:pl-0 dark:text-[#FFFFFF] text-[#333333]">
             <div class="w-full text-7xl pb-10 font-black md:text-left">Boudra<br>Tristan</div>
             <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en BTS SIO spécialisé dans le développement web.</div>
-            <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start">
+            <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start text-[#333333]">
               <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest transition duration-600"><a class="bg-transparent" href="/#realisation">Commencer</a></button>
-              <router-link class="border-2 border-white p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-full tracking-widest flex-row" to="/projects">Voir mes projets
+              <router-link class="border-2 border-[#333333] p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-full tracking-widest flex-row text-[#333333] dark:text-[#FFFFFF] dark:border-white" to="/projects">Voir mes projets
                 <img class="m-auto mt-1 flex mx-auto" src="@/assets/Arrow.png" alt="flèche pour voir mes projets">
               </router-link>
             </div>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="flex text-[#FFFFFF] gap-4 mt-28 flex-col md:flex-row md:p-5">
-        <div class="flex flex-col">
+        <div class="flex flex-col text-[#333333] dark:text-[#FFFFFF]">
           <div class="flex-row text-left w-30 mx-auto p-10 lg:pl-0">
             Titulaire d'un Bac STI2D, je suis actuellement en 2eme année de BTS SIO. Plus précisément en option SLAM (Solutions Logicielles et Applications Métiers) à l’Institut Supérieur de Saint-Denis à Annonay.
             Avec mes projets de cours, personnels, ainsi que mes stages, j’ai pu apprendre:</div>
@@ -31,7 +31,7 @@
         </div>
         <div class="p-2">
           <div class="flex-col">
-          <div class="flex flex-row space-x-14 justify-center mt-5">
+          <div class="flex flex-row space-x-14 justify-center mt-5 text-[#333333] dark:text-[#FFFFFF]">
             <div class="flex-row text-7xl">+6
               <div class="text-base">Projets</div>
             </div>
@@ -39,7 +39,7 @@
               <div class="text-base">Expériences</div>
             </div>
           </div>
-          <div class="flex flex-row gap-8 justify-center">
+          <div class="flex flex-row gap-8 justify-center text-[#333333]">
             <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="/files/CV.pdf" download="CV.pdf">CV</a></button>
             <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="/files/Certification_Anssi.pdf" download="Certification_Anssi.pdf">Certification ANSSI</a></button>
           </div>
@@ -47,8 +47,8 @@
         </div>
       </div>
     </section>
-    <section id="bts">
-      <div class="max-w-screen-lg mx-auto p-10 mt-20">
+    <section id="bts" class="max-w-screen-lg mx-auto bg-white dark:bg-[#333333]">
+      <div class="max-w-screen-lg mx-auto p-10 mt-20 text-[#333333] dark:text-[#FFFFFF]">
         <h2 class="text-3xl font-bold text-center mx-auto">BTS SIO - SLAM</h2>
         <div class="text-left p-3">
           <p class="mt-5">Le BTS Services informatique aux Organisations est un diplôme reconnu par l’état de niveau Bac+2. Il remplace depuis septembre 2011 l’ancien BTS informatique de Gestion (BTS IG). En effet, cette nouvelle formule répond aux attentes de la profession en matière de qualification. Le programme a évolué en fonction de la place et du rôle des TIC (Technologies d’Information Communication) et propose deux spécialités bien distinctes : le BTS SIO SISR et le BTS SIO SLAM.</p>
@@ -61,8 +61,8 @@
         </div>
       </div>
     </section>
-    <section id="stages">
-      <div class="max-w-screen-lg mx-auto p-5 mt-20">
+    <section id="stages" class="max-w-screen-lg mx-auto bg-white dark:bg-[#333333]">
+      <div class="max-w-screen-lg mx-auto p-5 mt-20 text-[#333333] dark:text-[#FFFFFF]">
         <h2 class="text-3xl font-bold text-center mx-auto">Stage</h2>
         <p class="p-5 w-auto mx-auto mt-10">Durant le BTS SIO, nous devons effectuer 2 stages en entreprise pour une durée totale de 10 semaines permettant de valider notre BTS.</p>
         <div class="grid m-auto grid-cols-1 p-5 gap-5 rounded-lg">
@@ -92,8 +92,8 @@
         </div>
       </div>
     </section>
-    <section id="realisation">
-      <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20 grid gap-12">
+    <section id="realisation" class="max-w-screen-lg mx-auto bg-white dark:bg-[#333333]">
+      <div class="max-w-screen-lg mx-auto px-3 py-16 mt-20 grid gap-12 text-[#333333] dark:text-[#FFFFFF]">
         <h2 class="text-3xl font-bold text-center mx-auto">Mes projets</h2>
         <div class="flex flex-col gap-20" >
           <div v-for="row in Realisation" v-bind:key="row" class="gap-16">
@@ -105,8 +105,8 @@
         </div>
       </div>
     </section>
-    <section id="veilles">
-      <div class="max-w-screen-lg mx-auto p-10 grid gap-12">
+    <section id="veilles" class="max-w-screen-lg mx-auto bg-white dark:bg-[#333333]">
+      <div class="max-w-screen-lg mx-auto p-10 grid gap-12 text-[#333333] dark:text-[#FFFFFF]">
         <h2 class="text-3xl font-bold text-center mx-auto">Veilles</h2>
         <p class="text-left p-6">Une veille est une activité consistant à s'informer sur les dernières avancées et informations d'un secteur donné.<br>
           Durant ce BTS SIO, nous avons dû mettre en place une veille technologique :<br>
@@ -120,8 +120,8 @@
           <router-link to="/veilles" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-auto h-auto tracking-widest mx-auto">Voir ma veille</router-link>
       </div>
     </section>
-    <section id="contact">
-      <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12">
+    <section id="contact" class="max-w-screen-lg mx-auto bg-white dark:bg-[#333333]">
+      <div class="max-w-screen-lg mx-auto px-3 py-16 grid gap-12 text-[#333333] dark:text-[#FFFFFF]">
         <h2 class="text-3xl font-bold text-center mx-auto">Me contacter</h2>
         <Contact/>
       </div>

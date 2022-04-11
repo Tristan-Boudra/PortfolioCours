@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full">
+  <div class="w-full dark:bg-[#333333]">
     <Navbar/>
-    <section class="max-w-screen-lg mx-auto mt-20">
+    <section class="max-w-screen-lg mx-auto mt-20 dark:bg-[#333333] text-[#333333] dark:text-[#FFFFFF]">
       <div class="max-w-screen-lg mx-auto px-3 grid gap-6">
         <h1 class="text-3xl font-bold text-center mx-auto">{{ this.brogieux.name }}</h1>
         <img class="mx-auto rounded-lg mb-5" v-if="this.brogieux.img" :src="require(`@/assets/${this.brogieux.img}.png`)" alt="Images du chateau de Brogieux">
