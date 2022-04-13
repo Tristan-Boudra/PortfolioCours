@@ -12,7 +12,17 @@
           <li><a href="https://twitter.com/TristanBoudra"><img class="w-14 flex" src="@/assets/Twitter.png" alt="Twitter"></a></li>
         </ul>
       </div>
-      <p class="text-[#333333]">© Boudra Tristan | Tous droits réservés</p>
+      <p class="text-[#333333] dark:text-[#FFFFFF]">© Boudra Tristan {{ copyrightDate }} | Tous droits réservés</p>
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      copyrightDate: new Date().getFullYear(),
+    };
+  },
+};
+</script>

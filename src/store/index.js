@@ -103,10 +103,14 @@ export default createStore({
         id: 6,
         name: 'Les Jardins de Brogieux',
         websiteLinks: 'https://www.les-jardins-de-brogieux.fr/',
-        description: 'Construit sur les restes d’une ferme forte du XIVème siècle, le château de Brogieux se trouve sur la commune de ROIFFIEUX en Ardèche(07).',
+        description: 'Construite sur les restes d’une ferme forte du XIVème siècle, le château de Brogieux se trouve sur la commune de ROIFFIEUX en Ardèche(07).',
         img: 'brogieux',
         title: 'Missions réalisées:',
         link: [
+          {
+            linkName: 'Website',
+            link: 'https://www.les-jardins-de-brogieux.fr/',
+          },
           {
             linkName: 'SurveyMonkey',
             link: 'https://fr.surveymonkey.com/r/NB95QCZ',
@@ -333,10 +337,10 @@ export default createStore({
             link: '',
           },
         ],
-        img: 'covoit',
+        img: 'CovoitAdmin',
         projectOrigine: 'Le but de mon application est un système d’administration de mon projet web. Elle permettra de faire suite aux demandes des utilisateurs pour modifier des informations personnelles.',
         projectObjectif: 'C’est de pouvoir accéder à toute une partie administration qui permet de modifier les motorisations, réinitialiser les mots de passe, informations personnelles.',
-        projectDescription: 'Il s’agit d’un projet consistant à réaliser une application en C# avec l’aide de WPF, permettant de changer toutes les informations de mon application.',
+        projectDescription: 'Il s’agit d’un projet consistant à réaliser une application en C# avec l’aide de WPF, permettant de changer toutes les informations de mon application Covoit.',
         maquetteWebsite: 'Figma',
       },
       {

@@ -33,7 +33,7 @@
       </div>
       <div></div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto mt-10">
-        <p class="italic my-auto">Tous les champs sont obligatoire</p>
+        <p class="italic my-auto">Tous les champs sont obligatoires</p>
       </div>
       <input class="md:col-span-2 mx-auto cursor-pointer mt-5 px-5 py-2 bg-[#DA5759] transition duration-200 text-[#000000] font-bold rounded-xl flex items-center w-fit" value="Envoyer" type="submit" name="" id="">
     </form>

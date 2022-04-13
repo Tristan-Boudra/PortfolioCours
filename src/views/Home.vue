@@ -9,7 +9,7 @@
             <div class="w-full text-7xl pb-10 font-black md:text-left">Boudra<br>Tristan</div>
             <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en BTS SIO spécialisé dans le développement web.</div>
             <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start text-[#333333]">
-              <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest transition duration-600"><a class="bg-transparent" href="/#realisation">Commencer</a></button>
+              <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest transition duration-600"><a class="bg-transparent" href="/#bts">Commencer</a></button>
               <router-link class="border-2 border-[#333333] p-2 rounded-lg text-[#FFFFFF] font-bold text-center h-full tracking-widest flex-row text-[#333333] dark:text-[#FFFFFF] dark:border-white" to="/projects">Voir mes projets
                 <img class="m-auto mt-1 flex mx-auto" src="@/assets/Arrow.png" alt="flèche pour voir mes projets">
               </router-link>
