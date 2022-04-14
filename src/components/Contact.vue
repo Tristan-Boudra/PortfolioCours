@@ -12,23 +12,23 @@
         </div>
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="name">Nom:</label>
+        <label class="text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="name">Nom:</label>
         <input class="px-2 py-1 border-2 border-[#333333] dark:bg-[#333333] dark:border-[#FFFFFF] rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80"  type="text" id="name" name="name" autocomplete="name" v-model="name">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="surname">Prénom:</label>
+        <label class="text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="surname">Prénom:</label>
         <input class="px-2 py-1 border-2 border-[#333333] dark:bg-[#333333] dark:border-[#FFFFFF] rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="surname" name="surname" autocomplete="surname" v-model="surname">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="object">Objet:</label>
+        <label class="text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="object">Objet:</label>
         <input class="px-2 py-1 border-2 border-[#333333] dark:bg-[#333333] dark:border-[#FFFFFF] rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="object" name="object" autocomplete="objet" v-model="object">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="email">Mail:</label>
+        <label class="text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="email">Mail:</label>
         <input class="px-2 py-1 border-2 border-[#333333] dark:bg-[#333333] dark:border-[#FFFFFF] rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" type="text" id="email" name="email" autocomplete="email" v-model="email">
       </div>
       <div class="flex flex-col grid gap-2 md:w-auto md:mx-auto">
-        <label class="text-[#FFFFFF] text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="message">Message:</label>
+        <label class="text-left p-2 text-lg font-bold text-[#333333] dark:text-[#FFFFFF]" for="message">Message:</label>
         <textarea class="px-2 py-1 border-2 border-[#333333] dark:bg-[#333333] dark:border-[#FFFFFF] rounded-lg border-white-500 transition duration-200 outline outline-transparent focus:border-[#DA5759] md:w-80" name="message" id="message" cols="40" rows="10" v-model="message"></textarea>
       </div>
       <div></div>

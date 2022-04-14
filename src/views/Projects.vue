@@ -2,7 +2,7 @@
   <div class="w-full dark:bg-[#333333]">
     <Navbar/>
     <section class="max-w-screen-lg mx-auto">
-      <div class="max-w-screen-lg mx-auto px-3 py-20 grid gap-12">
+      <div class="max-w-screen-lg mx-auto px-3 py-20 grid gap-12 text-[#333333] dark:text-[#FFFFFF]">
         <h2 class="text-3xl font-bold text-center mx-auto">Mes projets</h2>
         <div class="flex flex-col gap-20" >
           <div v-for="row in Realisation" v-bind:key="row" class="gap-16">

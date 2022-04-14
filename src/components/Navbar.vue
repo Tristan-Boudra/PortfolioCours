@@ -4,11 +4,12 @@
       <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center md:h-max">
         <div class="flex items-center justify-between">
           <router-link to="/" class="">
-            <img src="@/assets/Tristan.svg" class="px-4 py-1" alt="logo">
+            <img src="@/assets/Tristan_dark.svg" class="px-4 py-1 dark:hidden" alt="logo">
+            <img src="@/assets/Tristan_light.svg" class="px-4 py-1" alt="logo">
           </router-link>
           <!-- Mobile menu button -->
           <div @click="showMenu = !showMenu" class="flex md:hidden">
-            <button type="button" name="button" class="text-[#FFFFFF]" aria-label="open menu">
+            <button type="button" name="button" class="text-[#DA5759]" aria-label="open menu">
               <p class="hidden">-</p>
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path></svg>
             </button>
@@ -32,6 +33,7 @@
 export default {
   data() {
     return {
+      visible: false,
       showMenu: false,
     };
   },

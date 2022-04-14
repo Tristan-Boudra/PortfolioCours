@@ -3,8 +3,13 @@
     <footer class="max-w-screen-lg mx-auto">
         <div class="flex space-x-8 mx-auto justify-center">
           <img class="flex-row w-20 h-1 md:w-52 lg:w-full mt-5 rounded-full" src="@/assets/Line.png" alt="Ligne">
-          <img class="flew-row" src="@/assets/Tristan.svg" alt="Logo">
+            <img src="@/assets/Tristan_light.svg" class="px-4 py-1" alt="logo">
           <img class="flex-row w-20 h-1 md:w-52 lg:w-full mt-5 rounded-full" src="@/assets/Line.png" alt="Ligne">
+        </div>
+        <div class="flex space-x-8 mx-auto justify-center dark:hidden">
+          <img class="flex-row w-20 h-1 md:w-52 lg:w-full mt-5 rounded-full" src="@/assets/Line_dark.png" alt="Ligne">
+            <img src="@/assets/Tristan_dark.svg" class="px-4 py-1" alt="logo">
+          <img class="flex-row w-20 h-1 md:w-52 lg:w-full mt-5 rounded-full" src="@/assets/Line_dark.png" alt="Ligne">
         </div>
       <div class="">
         <ul class="flex flex-row mx-auto flex-wrap gap-4 justify-center p-4">
@@ -21,6 +26,7 @@
 export default {
   data() {
     return {
+      visible: false,
       copyrightDate: new Date().getFullYear(),
     };
   },
