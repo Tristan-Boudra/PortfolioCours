@@ -4,6 +4,7 @@ import Projects from '../views/Projects.vue';
 import Realisation from '../views/Realisation.vue';
 import Veilles from '../views/Veilles.vue';
 import Stage from '../views/Stage.vue';
+import MentionsLegales from '../views/MentionsLegales.vue';
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     name: 'Stage',
     component: Stage,
   },
+  {
+    path: '/mentionsLegales',
+    name: 'MentionsLegales',
+    component: MentionsLegales,
+  },
 ];
 
 const router = createRouter({
@@ -42,13 +48,6 @@ const router = createRouter({
 });
 
 router.afterEach(() => {
-  // if (to.params.name) {
-  //   document.title = 'Boudra Tristan';
-  // } else if (to.meta && to.meta.title) {
-  //   document.title = to.meta.title;
-  // } else {
-  //   document.title = 'Boudra Tristan';
-  // }
   document.title = 'Boudra Tristan';
 });
 
