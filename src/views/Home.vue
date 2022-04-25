@@ -10,8 +10,8 @@
             <div class="p-5 pl-0 mt-10 mx-auto md:text-left"><span class="text-xl">Hello</span> 👋<br>Je suis actuellement étudiant en BTS SIO spécialisé dans le développement web.</div>
             <div class="mt-10 flex justify-center space-x-6 mx-auto md:justify-start text-[#333333]">
               <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest transition duration-600"><a class="bg-transparent" href="/#bts">Commencer</a></button>
-              <router-link class="border-2 border-[#333333] p-2 rounded-lg font-bold text-center h-full tracking-widest flex-row text-[#333333] dark:text-[#FFFFFF] dark:border-white" to="/projects">Voir mes projets
-                <img class="m-auto mt-1 flex mx-auto" src="@/assets/Arrow.png" alt="flèche pour voir mes projets">
+              <router-link class="border-2 h-14 p-3 border-[#333333] p-2 rounded-lg font-bold text-center h-full tracking-widest flex-row text-[#333333] dark:text-[#FFFFFF] dark:border-white" to="/projects">Voir mes projets
+                <!-- <img class="m-auto mt-1 flex mx-auto" src="@/assets/Arrow.png" alt="flèche pour voir mes projets"> -->
               </router-link>
             </div>
           </div>
@@ -40,8 +40,9 @@
             </div>
           </div>
           <div class="flex flex-row gap-8 justify-center text-[#333333]">
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="/files/cv.pdf" download="cv.pdf">CV</a></button>
-            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mt-10"><a class="bg-transparent" href="/files/Certification_Anssi.pdf" download="Certification_Anssi.pdf">Certification ANSSI</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-auto tracking-widest mt-10"><a class="bg-transparent" href="/files/cv.pdf" download="cv.pdf">CV</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-auto tracking-widest mt-10"><a class="bg-transparent" href="/files/Certification_Anssi.pdf" download="Certification_Anssi.pdf">Certification ANSSI</a></button>
+            <button class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-auto h-auto tracking-widest mt-10"><a class="bg-transparent" href="/files/Synthèse.pdf" download="Synthèse.pdf">Tableau synthèse</a></button>
           </div>
           </div>
         </div>
@@ -74,7 +75,7 @@
               <h3 class="mt-5 text-left font-bold text-xl">Description:</h3>
               <p class="text-left mb-10">Les Jardins de Brogieux est un ensemble de jardins à visiter ainsi qu'une ancienne maison forte et toutes l'histoire liés à cela.</p>
             </div>
-            <router-link to="/stage" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto">En savoir plus</router-link>
+            <router-link to="/stage" class="bg-[#DA5759] p-3 rounded-lg text-[#000000] font-bold text-center w-auto h-14 tracking-widest mx-auto">En savoir plus</router-link>
           </div>
           <div class="w-60 mx-auto md:w-96 lg:w-96 h-px bg-[#A0A0A0] mt-8 rounded-lg"></div>
           <div class="">
@@ -87,7 +88,10 @@
               <h3 class="mt-5 text-left font-bold text-xl">Projets réalisés:</h3>
               <p class="text-left mb-10">Kathekon & Vm-Automation</p>
             </div>
-            <router-link to="/projects" class="bg-[#DA5759] p-2 rounded-lg text-[#000000] font-bold text-center w-32 h-14 tracking-widest mx-auto mt-10">En savoir plus</router-link>
+            <div class="flex flex-row gap-8 justify-center text-[#333333]">
+              <router-link to="/projects" class="bg-[#DA5759] p-3 rounded-lg text-[#000000] font-bold text-center w-auto h-14 tracking-widest mt-10">En savoir plus</router-link>
+              <button class="bg-[#DA5759] p-3 rounded-lg text-[#000000] font-bold text-center w-auto h-14 tracking-widest mt-10"><a class="bg-transparent" href="/files/Documentation.pdf" download="Documentation.pdf">Procédure</a></button>
+            </div>
           </div>
         </div>
       </div>
